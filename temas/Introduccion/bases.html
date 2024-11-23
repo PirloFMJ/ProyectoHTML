@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./estilos-contenido.css">
+    <title>Bases de Datos</title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../Introduccion/historia.html" class="subtema tema1"> Historia de la Computadora </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/conceptos.html" class="subtema tema1"> Conceptos Básicos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/arquitectura.html" class="subtema tema1">Arquitectura de una Computadora</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/sistemas.html" class="subtema tema1">Sistemas Operativos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/recursos.html" class="subtema tema1">Recursos Administrados por el Sistema Operativo</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/linux.html" class="subtema tema1">Linux</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/virtualizacion.html" class="subtema tema1">Virtualización y Linux</a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../Introduccion/bases.html" class="subtema tema1"> Bases de Datos </a></div>
+          <div class="subtema tema2"> <a href="../Introduccion/redes.html" class="subtema tema1"> Redes </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../Introduccion/desarrollo.html" class="subtema tema1"> Desarrollo WEB </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/html.html" class="subtema tema1"> HTML </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/css.html" class="subtema tema1"> CSS </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../intro.html"> Regresar al tablero</a>  
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Bases de Datos</h1>
+                <h2> ¿Qué es una Base de Datos?</h2>
+                <h3>Definición 1</h3>
+                    <p>
+                      Desde un punto de vista muy simple una base de datos es básicamente un sistema para archivar información en una computadora cuyo propósito general es 
+                      mantenerla disponible cuando se solicite. La información en general puede ser cualquier cosa que se considere importante para un individuo u 
+                      organización.
+                    </p>
+                    <h3>Definición 2</h3>
+                    <p> Es un conjunto de información almacenada en una computadora, dicha información puede ser manipulada con operaciones como agregar, consultar, eliminar 
+                    entre otras. Y puede utilizarse en aplicaciones tan sencillas como llevar la información como una pequeña agenda telefónica hasta la información de una 
+                    gran corporación. </p>
+                    <h3>Definición 3</h3>
+                      <p>
+                        Una base de datos es una colección de información organizada de forma que un programa de ordenador pueda seleccionar rápidamente los fragmentos de datos que necesite. 
+                        Una base de datos es un sistema de archivos electrónico.
+                      </p>
+                    <h2>
+                      ¿Porque Utilizar una Base de Datos?
+                    </h2>
+                    <p>
+                      Las ventajas de un sistema de BD sobre los métodos tradicionales de mantener registros en papel serán quizá más evidentes a continuación:
+                      <ul>
+                        <li> Es compacto </li>
+                        <li> Es rápido </li>
+                        <li> Es menos laborioso</li>
+                        <li> Es actual</li>
+                      </ul>
+                    </p>
+                    <h3>Ventajas del enfoque de BD</h3>
+                    <p>
+                      A continuación se explica algunas de las ventajas específicas que emanan del concepto de control centralizado:
+                      <ul>
+                        <li>Es posible disminuir la redundancia</li>
+                        <li>Es posible evitar la inconsistencia</li>
+                        <li>Es posible compartir los datos</li>
+                        <li>Es posible hacer cumplir las normas</li>
+                        <li>Es posible aplicar restricciones de seguridad</li>
+                        <li>Es posible mantener la integridad</li>
+                      </ul>
+                    </p>
+                    <h2> Base de datos Relacionales </h2>
+                    <p>
+                      Antes de explicar que es una base relacional es importante algunos conceptos Básicos.
+                    </p>
+                    <h3>
+                      Campo
+                    </h3>
+                    <p>
+                      Es la unidad más pequeña a la cual uno puede referirse en un programa. Desde el punto de vista del programador representa una característica de un 
+                      individuo u objeto.
+                    </p>
+                    <h3>
+                      Registro
+                    </h3>
+                    <p>
+                      Es una colección de campos de iguales o de diferentes tipos.
+                    </p>
+                    <h3>
+                      Archivo
+                    </h3>
+                    <p>
+                      Es una colección de registros almacenados siguiendo una estructura homogénea.
+                    </p>
+                    <h3>
+                      Base de datos
+                    </h3>
+                    <p>
+                      Podemos decir entonces que una base de datos es una colección de archivos interrelacionados y cuyo contenido engloba a la información 
+                      concerniente(almacenadas en archivos) de una organización, de tal manera que los datos estén disponibles para los usuarios.
+                    </p>
+                    <h3>
+                      Entidad
+                    </h3>
+                    <p>
+                      En una base de datos relacional conoceremos como entidad a un objeto real o abstracto acerca del cual se almacenan datos, el cual se diferencia 
+                      de otros objetos a partir de atributos.
+                    </p>
+                    <h3>
+                      Atributo
+                    </h3>
+                    <p>
+                      Elemento o dato que describe o identifica cada entidad dándole características propias. Normalmente los atributos son virtualmente ilimitados para una 
+                      entidad pero deben seleccionarse los de mayor relevancia para el problema que se está analizando.
+                    </p>
+
+                    <p>
+                      <br>
+                      Habiendo explicado algunos conceptos básicos discutiremos el termino Base de datos Relacional. Una relación es una asociación entre los datos guardados en diferentes archivos o tablas,
+                      Un aspecto importante de las relaciones entre las tablas es la cardinalidad. La Cardinalidad se refiere a la cantidad de asociaciones que pueden 
+                      existir entre dos tipos de registros de datos. Dependiendo del tipo de cardinalidad que tenga la relación esta puede denominarse de las siguientes 
+                      maneras:
+                      <ul>
+                        <li> Relación de uno a uno</li>
+                        <li> Relación de uno a muchos</li>
+                        <li> Relación de muchos a muchos</li>
+                      </ul>
+                    </p>
+                    <table>
+                      <tr>
+                        <th>
+                          Relación de uno a uno 
+                        </th>
+                        <th>
+                          Relacion de uno a muchos
+                        </th>
+                        <th>
+                          Relacion de muchos a muchos
+                        </th>
+                      </tr>
+                      <tr>
+                        <td>
+                          Una registro de una Entidad A se relaciona únicamente con un registro de una tabla B y viceversa. Este tipo de relación no es común en el mundo de 
+                          las bases de datos.
+                        </td>
+                        <td>
+                          Una registro de una Entidad A se relaciona con varios registros de una tabla B.
+                        </td>
+                        <td>
+                          Cuando un registro de una entidad A puede estar relacionado con más de un registro de la entidad B y viceversa. En este caso las dos tablas no 
+                          pueden estar relacionadas directamente, se tiene que añadir una tabla entre las dos que incluya los pares de valores relacionados entre sí.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="../../img/introduccion/imagenes-contenido/relacionuau.JPG" alt="Relacion de uno a uno">
+                        </td>
+                        <td>
+                          <img src="../../img/introduccion/imagenes-contenido/relacionuam.JPG" alt="Relacion de uno a muchos">
+                        </td>
+                        <td>
+                          <img src="../../img/introduccion/imagenes-contenido/relacionmum.JPG" alt="Relacion de muchos a muchos">
+                        </td>
+                      </tr>
+                    </table>
+                    <h2>
+                      ¿Qué es una Llave Primaria
+                    </h2>
+                    <p>
+                      Una llave primaria es aquel atributo (o atributos) que consideramos clave para la identificación de los demás atributos que describen a la entidad.
+                    </p>
+                    <h2>
+                      Llave Foránea
+                    </h2>
+                    <p>
+                      Es uno o mas campos de un tabla que hacen referencia al campo o campos de llave primaria de otra tabla, una llave foránea indica como esta relacionadas
+                      las entidades. <br>
+                      Los datos en los atributos de llave primaria y llave foránea deben coincidir en el tipo de datos y tamaño que almacenan, aunque los nombres de los 
+                      atributos no sean los mismos.
+                    </p>
+
+                    <h2>
+                      Arquitectura para Sistemas de Base de Datos
+                    </h2>
+                    <p>
+                      Los usuarios no tienen porque conocer como están organizados y almacenados los datos, es por ese motivo que una base de datos debe presentar los datos 
+                      de forma que el usuario pueda interpretarlos y modificarlos según las tareas que éste tenga asignados. Evidentemente esto no lo podemos aplicar a un 
+                      informático que necesite saber donde se encuentran físicamente los datos para poder tratarlos. Según la visión y la función que realicen los usuarios 
+                      sobre la BD podemos dividir en tres niveles principales:
+                      <ul>
+                        <li>
+                          <strong>
+                            Nivel conceptual: 
+                          </strong>
+                          En este nivel se representan los datos que se van a utilizar sin tener en cuenta aspectos como lo que representamos en el nivel interno. 
+                          A grandes rasgos este nivel debe ser un panorama de los datos tal como son y no como por fuerza los perciben los usuarios debido a las limitantes
+                           del lenguaje o el equipo especifico utilizado.
+                        </li>
+                        <li>
+                          <strong>
+                            Nivel Externo: 
+                          </strong>
+                          es el más cercano al usuario. En este nivel se describen los datos o parte de los datos que más interesan a los usuarios.
+                        </li>
+                      </ul>
+                    </p>
+                    <div class="conenedor-modelos">
+                      <div class="modelos">
+                          <img src="../../img/introduccion/imagenes-contenido/arquibases.JPG" alt="Arquitectura de bases de Datos">
+                      </div>
+                    </div>
+                    <h2>
+                      Administrador de Base de Datos (DBA)
+                    </h2>
+                    <p>
+                      El administrador de la base de datos es la persona que toma las decisiones estratégicas y de políticas con respecto a la información de la base de datos
+                    </p>
+                    <h3>
+                      Responsabilidad del DBA
+                    </h3>
+                    <p>
+                      La responsabilidad general del DBA es facilitar el desarrollo y el uso de la Base de Datos dentro de las guías de acción definidas por la administración de los datos.
+                    </p>
+                    <h2>
+                      Sistema de Gestión de Base de Datos (SGBD)
+                    </h2>
+                       <p>
+                        Es el conjunto de programas que maneja todo acceso a la base de
+                        datos.
+                       </p>
+                      <h2>
+                        Lenguaje de Base de Datos SQL
+                      </h2>
+                      <p>
+                        El Lenguaje SQL (structured Query Language) utilizado para base de datos fue desarrollado entre 1974 y 1975 en IBM, en esos años se le conocía como 
+                        llamaba SEQUEL (Structured English Query Language) y se utilizaba como interfaz para un sistema experimental de base de datos llamado SYSTEM R.
+                        <br> <br>
+                        SQL fue introducido por Oracle por primera vez en una base de datos comercial en el año 1979 y pronto se convirtió en un estándar ANSI e ISO 
+                        dando lugar de allí en adelante a varias versiones mejoradas del lenguaje. <br> <br>
+                        El lenguaje se utiliza para definir toda las estructuras de la base de datos: crear entidades, atributos, y todas su operaciones, crear, eliminar, 
+                        modificar y por supuesto consultar la información almacenada en ellas.
+                      </p>
+                      <div class="conenedor-modelos">
+                        <div class="modelos">
+                            <img src="../../img/introduccion/imagenes-contenido/SQL.jpg" alt="Arquitectura de bases de Datos">
+                        </div>
+                      </div>
+                      <h3>
+                        El DML (Data Management Language) 
+                      </h3>
+                      <p>
+                        Lenguaje de manipulación de datos, la cuales cuenta con una gama amplia de sentencias que sirven para recuperar, insertar, borrar, modificar los datos almacenados en las estructuras 
+                        creadas por el DDL: algunas de las instrucciones que forman parte del DML son: Select, insert, update, delete.
+                      </p>
+                      <h3>
+                        El DCL (Data Control Language) 
+                      </h3>
+                      <p>
+                        Es la parte menos conocida del SQL , siendo la finalidad controlar el acceso a datos denegando y otorgando privilegios sobre los objetos existentes.
+                        Las instrucciones que forman parte del DCL son: Commit, Rollback, Savepoint, save transaction.
+                      </p>
+                      <h2>
+                        El Modelo Entidad-Relación (E/R)
+                      </h2>
+                      <p>
+                        Cuando se utiliza una base de datos para gestionar información, se está plasmando una parte del mundo real en una serie de tablas, registros y campos 
+                        ubicados en un computador; creándose un modelo parcial de la realidad. Antes de crear físicamente estas tablas en el ordenador se debe realizar un 
+                        modelo de datos.
+                        <br>
+                        <br>
+                        Se suele cometer el error de ir creando nuevas tablas a medida que se van necesitando, haciendo así el modelo de datos y la construcción física de 
+                        las tablas simultáneamente. El resultado de esto acaba siendo un sistema de información parcheado, con datos dispersos que terminan por no cumplir 
+                        adecuadamente los requisitos necesarios.
+                      </p>
+                      <div class="conenedor-modelos">
+                        <div class="modelos">
+                            <img src="../../img/introduccion/imagenes-contenido/DiagramaER.JPG" alt="Arquitectura de bases de Datos">
+                        </div>
+                      </div>
+                      <h2>
+                        ¿Qué es XAMPP?
+                      </h2> 
+                      <p>
+                        XAMPP es una herramienta de desarrollo que te permite probar tu desarrollo web basado en PHP en tu propio ordenador sin necesidad de tener acceso a
+                        internet. Si eres un diseñador web o desarrollador web que recién está comenzando, no es necesario saber sobre las configuraciones de servidores 
+                        (aun), ya que XAMPP te provee de una configuración totalmente funcional desde el momento que lo instalas. Básicamente lo extraes y listo.
+                        Es bueno acotar que la seguridad de datos no es su punto fuerte, por lo cual no es suficientemente seguro para ambientes grandes o de producción.
+                      </p>
+                      <h3>Como Instalar XAMPP</h3>
+            <div class="contenedor-video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MtllDrDm4cM" title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>    
+
+            <h2> Normalización</h2>
+              <p>
+                Es la aplicación de un conjunto de reglas que permite aprobar la de un modelo de base de datos relacionales. Se incluye la creación de tablas y el establecimiento de 
+                relaciones entre ellas según reglas diseñadas tanto para proteger los datos como para hacer que la base de datos sea más flexible al eliminar la redundancia y
+                las dependencias incoherentes.
+              </p>
+              <h3>
+                Formas Nomrales
+              </h3>
+              <p>
+              <strong> Forma Normal:</strong> Regla que define una característica que una relación debe cumplir.
+              </p>
+              <h3>
+                Forma Normal 1 (FN1)
+              </h3>
+              <p>
+                Una relación esta en FN1 si y solo si todos los atributos son atómicos. Además, debe haber solo una llave primaria. Un atributo es atómico si representa solo un valor.
+                No deben existir mas valores en el campo de la tabla, si existen, se eliminan y se emplean en nuevas relaciones.
+              </p>
+              <h3>
+                Forma Normal 2 (FN2)
+              </h3>
+              <p>
+                Una relación esta en FN2 si y solo si la relación esta en FN1 y todos los atributos dependen totalmente de la llave primaria. No deben depender de algún 
+                elemento que la componga, si la llave es compuesta.
+              </p>
+              <h3>
+                Forma Normal 3 (FN3)
+              </h3>
+              <p>
+                Una relación esta en FN3 si y solo si esta en FN2 y todos los atributos dependen directamente de la llave primaria. No deben existir dependencias transitivas.
+              </p>
+              <h3>
+                Forma Normal de Boyce-Codd (FNBC)
+              </h3>
+              <p>
+                Una relación esta en FNBC si y solo si todos sus determinantes son llaves de la relación.
+              </p>
+              <h2>
+                MySQL, Relacionar Tablas, importar y exportar scripts. WorkBench y PHPMyAdmin
+              </h2>
+              <div class="contenedor-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1W7LPdx16mQ" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>  
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Introducción a los Sistemas de Computo </h2>
+                    <p> Jorge Mario Folgar Martínez </p>
+                    <p> Carnet: 5090-23-5008</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

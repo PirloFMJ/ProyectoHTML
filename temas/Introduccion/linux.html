@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./estilos-contenido.css">
+    <title> Sistema Operativo Linux</title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../Introduccion/historia.html" class="subtema tema1"> Historia de la Computadora </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/conceptos.html" class="subtema tema1"> Conceptos Básicos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/arquitectura.html" class="subtema tema1">Arquitectura de una Computadora</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/sistemas.html" class="subtema tema1">Sistemas Operativos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/recursos.html" class="subtema tema1">Recursos Administrados por el Sistema Operativo</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/linux.html" class="subtema tema1">Linux</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/virtualizacion.html" class="subtema tema1">Virtualización y Linux</a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../Introduccion/bases.html" class="subtema tema1"> Bases de Datos </a></div>
+          <div class="subtema tema2"> <a href="../Introduccion/redes.html" class="subtema tema1"> Redes </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../Introduccion/desarrollo.html" class="subtema tema1"> Desarrollo WEB </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/html.html" class="subtema tema1"> HTML </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/css.html" class="subtema tema1"> CSS </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../intro.html"> Regresar al tablero</a>  
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Sistema Operativo Linux</h1>
+                <h2> Comandos Básicos</h2>
+                    <p>
+                      Algunos de ellos como man, ls, chmod y umask ya han sido referenciados, otros se mencionarán más adelante en dependencia de los temas que se traten. 
+                      Muchos de estos comandos están presentes también en los sistemas Unix aunque a veces varían sus opciones y argumentos en dependencia de las versiones. 
+                      Por esto no puede encontrarse una documentación que diga la última palabra respecto a uno u otro comando, la práctica es la mejor forma de comprobar 
+                      como funciona cada uno. Para su mejor comprensión los clasificamos en diferentes categorías.
+                    </p>
+                    <h3>Categorias de los comandos </h3>
+                    <p>
+                      <ul>
+                        <li> Comandos para manipular ficheros y directorios</li>                                                    
+                        <li>Comandos para paginar, visualizar y editar ficheros</li>
+                        <li>Comandos para hacer búsquedas de ficheros y patrones</li>
+                        <li>Comandos para filtrar ficheros</li>
+                        <li>Comandos para compactar y agrupar ficheros</li>
+                        <li>Comandos para la comunicación entre usuarios</li>
+                        <li>Comandos para desconectarse del sistema</li>
+                        <li>Comandos para administrar usuarios y grupos</li>
+                        <li>Comandos variados</li>
+                      </ul>
+                    </p>
+                    <h2> Flujo de Datos</h2>
+                   <p> Todos los procesos (programas en ejecución) tienen
+                        asociados tres flujos (streams) de datos principales.
+                        Estos son:
+                        </p>
+                        <p>
+                          <ul>
+                            <li> La entrada estándar. Es donde puede tomar los datos que
+                              maneja y que no se indican mediante argumentos u
+                              opciones. Por defecto se toma a partir del teclado.</li>
+                            <li> La salida estándar. Es donde un proceso escribe los
+                              resultados de su ejecución. Por defecto es la terminal donde
+                              se invocó el programa correspondiente.</li>
+                            <li> La salida de errores. Es donde un proceso escribe los
+                              posibles errores durante su ejecución. Por defecto es la
+                              terminal donde se invocó el programa correspondiente.</li>
+                          </ul>
+                        </p>
+                        <p>
+                          Los flujos de datos se almacenan en descriptores de ficheros que se identifican por un número en la forma siguiente: <br>
+                          0: representa la entrada estándar. <br>
+                          1: representa la salida estándar. <br>
+                          2: representa la salida de errores. <br>
+                        </p>
+
+                        <h2>
+                          Redireccionamiento
+                        </h2>
+                        <p>
+                          En bash los flujos de datos se pueden redireccionar libremente hacia distintos ficheros. En esencia este mecanismo consiste en que la salida de 
+                          un proceso (estándar o de errores) puede escribirse en un fichero en lugar de la terminal asociada, así como la entrada puede tomarse también a 
+                          partir de un fichero en lugar de utilizar lo escrito mediante el teclado.
+                        </p>
+                        <h3>
+                          Entorno de trabajo en bash
+                        </h3>
+                        <p>
+                          Un entorno de trabajo en Linux no es más que la configuración que posee un usuario durante su interacción con el sistema y más específicamente con 
+                          el shell. Las características del entorno para el caso de bash pueden ser la forma en que se muestra el prompt, los alias y funciones definidos y
+                          las variables del entorno de forma general, ya que estas definen el comportamiento de muchos programas y comandos. Las facilidades para cambiar 
+                          el entorno de trabajo dependen de las capacidades del shell que se utilice.
+                        </p>
+                        <h3> Variables de Entorno </h3>
+                        <p>
+                          Almacenan valores que describen las propiedades del entorno de trabajo. Un usuario puede definir sus propias variables o modificar las ya
+                           existentes.
+                        </p>
+                        <p>
+                          Para asignarle valor a una variable en el shell se emplea el operador = entre el nombre de la variable y el valor asignado (no deben haber espacios
+                           intermedios).
+                        </p>
+                        <p>
+                          Dentro de un shell se pueden ejecutar otros shells que serían hijos del primero (subshells) heredando todo o parte del entorno de trabajo del padre.
+                           Para que una variable mantenga su valor en los shells hijos es necesario indicarlo explícitamente mediante el comando export.
+                        </p>
+                       
+            <div class="contenedor-video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/knrc4q1S_q0" title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           </div>     
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Introducción a los Sistemas de Computo </h2>
+                    <p> Jorge Mario Folgar Martínez </p>
+                    <p> Carnet: 5090-23-5008</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

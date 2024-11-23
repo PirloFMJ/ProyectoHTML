@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./estilos-contenido.css">
+    <title> Sistemas Operativos </title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../temas/historia.html" class="subtema tema1"> Historia de la Computadora </a></div>
+          <div class="subtema tema1"> <a href="../temas/conceptos.html" class="subtema tema1"> Conceptos Básicos </a></div>
+          <div class="subtema tema1"> <a href="../temas/arquitectura.html" class="subtema tema1">Arquitectura de una Computadora</a></div>
+          <div class="subtema tema1"> <a href="../temas/sistemas.html" class="subtema tema1">Sistemas Operativos </a></div>
+          <div class="subtema tema1"> <a href="../temas/recursos.html" class="subtema tema1">Recursos Administrados por el Sistema Operativo</a></div>
+          <div class="subtema tema1"> <a href="../temas/linux.html" class="subtema tema1">Linux</a></div>
+          <div class="subtema tema1"> <a href="../temas/virtualizacion.html" class="subtema tema1">Virtualización y Linux</a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../temas/bases.html" class="subtema tema1"> Bases de Datos </a></div>
+          <div class="subtema tema2"> <a href="../temas/redes.html" class="subtema tema1"> Redes </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../temas/desarrollo.html" class="subtema tema1"> Desarrollo WEB </a></div>
+          <div class="subtema tema3"> <a href="../temas/html.html" class="subtema tema1"> HTML </a></div>
+          <div class="subtema tema3"> <a href="../temas/css.html" class="subtema tema1"> CSS </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../intro.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Historia de la Computadora</h1>
+                <h2> Lorem ipsum dolor sit amet.</h2>
+                    
+            <div class="contenedor-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4SoNmRVxsBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <img src="../img/desarrolloweb.jpg" alt="">
+           </div>     
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Introducción a los Sistemas de Computo </h2>
+                    <p> Jorge Mario Folgar Martínez </p>
+                    <p> Carnet: 5090-23-5008</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

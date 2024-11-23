@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>Legislacion Aplicable a Empresas</title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../contenidoConta/usoaplicacion.html" class="subtema tema1"> Usos y aplicaciones de la Contabilidad </a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/legislacionaplicable.html" class="subtema tema1"> Legislacion Aplicable </a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/principiosconta.html" class="subtema tema1">Principios Contabilidad</a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/legislacionempresas.html" class="subtema tema1">Legislacion aplicable a empresas </a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/organizacioncomercial.html" class="subtema tema1">Tipos de Organizaciones Comerciales</a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/empresaiva.html" class="subtema tema1">Empresa Mercantil y IVA</a></div>
+        
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../contenidoConta/cuentacontable.html" class="subtema tema1"> Cuenta Contable </a></div>
+          <div class="subtema tema2"> <a href="../contenidoConta/ciclocontable.html" class="subtema tema1"> Ciclo Contable </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../contenidoConta/proyectofinalconta.html" class="subtema tema1"> Proyecto Final </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../Conta.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Legislacion aplicable a Empresas</h1>
+             <h2>Impuesto sobre la Renta</h2>
+             <p>El decreto 10-2012 contiene la regulación del Impuesto sobre la Renta que aplica según el Artículo 1 a  toda renta que obtengan las personas individuales, jurídicas, entes o patrimonios que se especifiquen en este libro, sean éstos nacionales o extranjeros</p>
+                <h3>Empresas</h3>
+                <p>El impuesto se calcula con un porcentaje del 25% sobre la Renta Imponible, quiere decir sobre sus utilidades, que significa ingresos (-) costos.</p>
+             <h3> Trabajadores </h3>   
+             El impuesto se calcula sobre su Renta Imponible de acuerdo a la siguiente tabla:
+             <table>
+                <tr>
+                    <th>
+                    Rango de renta Imponible
+                    </th> 
+                    <th>
+                    Importe fijo
+                    </th>
+                    <th>
+                    Tipo de impositivo de:
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Q0.01 a Q300,000.00
+                    </td>
+                    <td>
+                        Q0.00
+                    </td>
+                    <td>
+                        5% sobre la renta imponible
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Q300,000.00 en adelante
+                    </td>
+                    <td>
+                        Q15,000.00 
+                    </td>
+                    <td>
+                        7% sobre excedente de Q300,000.00
+                    </td>
+                </tr>
+             </table>
+             <h2>Renta Impobible sobre trabajadores</h2>
+             <p>Es la base sobre la cual se calcula el impuesto anual que pagará el trabajador, a través de retenciones mensuales. Para establecer la renta imponible el patrono se debe considerar las deducciones que se permiten en la proyección incluidas en el Artículo 72 de la ley.</p>
+             <h2> Planilla de Trabajadores</h2>
+             <div class="modelos">
+                <img src="../../img/imagesConta/principiosconta2.jpeg" alt="Codigo trabajo" >
+                </div>
+             
+
+                <h2>¿Que es el PCGA?</h2>
+                <p>Son un conjunto de reglas generales y normas que sirven de guía contable para formular criterios referidos a la medición del patrimonio y a la información de los elementos patrimoniales y económicos de un ente. Los PCGA constituyen parámetros para que la confección de los estados financieros sea sobre la base de métodos uniformes de técnica contable.</p>
+                <p> Proporcionar información sobre la entidad de manera que sea útil a los inversionistas, socios, entidades financieras, proveedores, acreedores y entes potenciales que puedan hacer tomar alguna decisión importante</p>
+                <div class="modelos">
+                    <img src="../../img/imagesConta/panilla.png" alt="Codigo trabajo" >
+                    </div>
+                
+                    
+                </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Contabilidad I </h2>
+                    <p> Kevin Elias Aguin Ostorga </p>
+                    <p> Carnet: 5090-23-210</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

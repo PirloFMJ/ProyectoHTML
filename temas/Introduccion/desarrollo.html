@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./estilos-contenido.css">
+    <title> Desarrollo WEB </title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../Introduccion/historia.html" class="subtema tema1"> Historia de la Computadora </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/conceptos.html" class="subtema tema1"> Conceptos Básicos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/arquitectura.html" class="subtema tema1">Arquitectura de una Computadora</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/sistemas.html" class="subtema tema1">Sistemas Operativos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/recursos.html" class="subtema tema1">Recursos Administrados por el Sistema Operativo</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/linux.html" class="subtema tema1">Linux</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/virtualizacion.html" class="subtema tema1">Virtualización y Linux</a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../Introduccion/bases.html" class="subtema tema1"> Bases de Datos </a></div>
+          <div class="subtema tema2"> <a href="../Introduccion/redes.html" class="subtema tema1"> Redes </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../Introduccion/desarrollo.html" class="subtema tema1"> Desarrollo WEB </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/html.html" class="subtema tema1"> HTML </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/css.html" class="subtema tema1"> CSS </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../intro.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Desarrollo Web</h1>
+                <h2> Internet</h2>
+                <p>
+                  Internet es la red de redes que interconecta computadores mediante diferentes protocolos, Un ordenador se puede conectar a Internet por medio de un servidor 
+                  de red (mediante tecnologías diversas). <br>
+                  Un ordenador puede conectarse a una red local y los ordenadores de dicha red local pueden conectarse a Internet mediante una pasarela, Existen ordenadores 
+                  permanentemente conectados a Internet que ofrecen  recursos (son los servidores)
+                </p>
+              <h3>
+                Recursos de Internet
+              </h3>
+              <p>
+                Los recursos accesibles en Internet se identifican por un URI (identificador de recurso uniforme)(URL) <br>
+                <strong> Ejemplo: </strong> <a href="http://www.uv.es/cerveron/paginasweb/index.html" target="_blank"> http://www.uv.es/cerveron/paginasweb/index.html </a> <br>
+                Internet es el medio de comunicación para diversas aplicaciones, que utilizan diferentes protocolos, destacando el correo electrónico, la transferencia de 
+                ficheros (FTP) y la web
+              </p>
+              <h2> Terminología </h2>    
+              <h3> HTTP:</h3>
+              <p>
+                Hypertext Transfer Protocol Parámetros de comunicación cliente - servidor Web
+              </p>
+              <h3>HTML:</h3>
+              <p>
+                Hypertext Markup Language Lenguaje nativo para documentos publicados en el Web independiente del tipo de plataforma.
+              </p>
+              <h3>URL:</h3>
+              <p>
+                Uniform Resource Locator Dirección de un objeto en el Web <a href="http://www.colnodo.org.co/" target="_blank"> http://www.colnodo.org.co/ </a>
+              </p>
+              <h2>
+                La Web
+              </h2>
+              <p>
+                La web es un sistema de información distribuido basado en hipertexto, los usuarios, mediante un navegador (cliente) solicitan recursos (normalmente
+                páginas web) a un servidor web
+              </p>
+              <h3>
+                World Wide Web ¿Cómo se inició?
+              </h3>
+              <p>
+                <ul>
+                  <li> Tim Barnes Lee (CERN, 1989).</li>
+                  <li> Repositorio estático de documentos </li>
+                  <li> La especificación inicial incluía: <strong>Un lenguaje para dar formato a los documentos (HTML).</strong> y 
+                  <strong>Un protocolo sencillo para comunicar navegadores (clientes) y servidores (HTTP).</strong></li>
+                </ul>
+              </p>
+              <h3>
+                El primer navegador gráfico
+              </h3>
+              <p>
+                En 1993 Marc Andreesen (estudiante) escribe Mosaic. Precursor de Netscape.
+              </p>
+              <div class="contenedor-modelos">
+                <div class="modelos">
+                  <img src="../../img/introduccion/imagenes-contenido/mosaic.jpg" alt="">
+                </div>
+              </div>
+              <h3>
+                Cómo funciona la web
+              </h3>
+              <p>
+                Para poder visualizar una página web es preciso:
+              </p>
+              <ul>
+                <li> Tener un ordenador conectado a Internet</li>
+                <li> Establecer una conexión PPP con la máquina del ISP </li>
+                <li> El ordenador recibe una dirección IP temporal</li>
+                <li> El ordenador recibe la dirección de un servidor de nombres (DNS, Domain Name Server)</li>
+                <li> Iniciar sesión en un navegador Web (ej.: Internet Explorer, Mozilla, Netscape, etc.)</li>
+                <li> Indicar al navegador el URL de la página que se desea "visitar". </li>
+                <li> El navegador pide al DNS la dirección IP correspondiente al servidor que  contiene el documento cuyo URL se ha indicado.</li>
+                <li> El navegador abre una sesión TCP con la máquina cuya dirección IP se ha obtenido.</li>
+                <li> El navegador solicita al servidor que le transmita el documento (orden GET).</li>
+                <li>  El servidor web envía el documento.</li>
+                <li> La conexión TCP finaliza.</li>
+                <li> El navegador muestra el documento.</li>
+              </ul>
+              <h2>
+                WWW es un sistema Cliente/Servidor
+              </h2>
+              <h3>Clientes Web:</h3>
+              <p>
+                <ul>
+                  <li> Utilizan el protocolo HTTP para conectar con los servidores.</li>
+                  <li> Solicitan y muestran las páginas web almacenadas en los servidores.</li>
+                  <li> Clientes típicos: navegadores web (Explorer, Firefox).</li>
+                </ul>
+              </p>
+              <h3>Servidores Web:</h3>
+              <p>
+                <ul>
+                  <li> "Escuchan" conexiones entrantes desde clientes. </li>
+                  <li>  Utilizan el protocolo HTTP para conversar con los clientes. </li>
+                  <li> Almacenan y transmiten páginas web a los clientes. </li>
+                  <li style="color: brown;"> Actualmente interactúan con el usuario y generan dinámicamente páginas web</li>
+                </ul>
+              </p>    
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Introducción a los Sistemas de Computo </h2>
+                    <p> Jorge Mario Folgar Martínez </p>
+                    <p> Carnet: 5090-23-5008</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>  Lógica de Sistemas  </title>
+</head>
+<body>
+    <section class="contenedor">
+        <nav class="navbar">
+                <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+                <div class="subtema tema1">Contenido Primer Parcial</div>
+                <div class="subtema tema1"> <a href="intrologica.html" class="subtema tema1">Introducción a la lógica</a></div>
+                <div class="subtema tema1"> <a href="silogismos.html" class="subtema tema1">Silogismos</a></div>
+                <div class="subtema tema1"> <a href="teoriaconjuntos.html" class="subtema tema1">Teoría de conjuntos (Lógica de clases)</a></div>
+                <div class="subtema tema1"><hr></div>
+                <div class="subtema tema1">Contenido Segundo Parcial</div>
+                <div class="subtema tema2"> <a href="logicaproposicional.html" class="subtema tema1">Lógica proposicional</a></div>
+                <div class="subtema tema2"> <a href="dedunatural.html" class="subtema tema1">Deducción natural</a></div>
+                <div class="subtema tema1"><hr></div>
+                <div class="subtema tema1">Contenido Examen Final</div>
+                <div class="subtema tema3"> <a href="algboole.html" class="subtema tema1">Álgebra de Boole</a></div>
+                <div class="subtema tema3"> <a href="logipredicados.html" class="subtema tema1">Lógica de predicados</a></div>
+                <div class="subtema tema3"> <a href="uml.html" class="subtema tema1">UML</a></div>
+                <div class="subtema tema1"><hr></div>
+                <div class="volver"> 
+                <div class="logo"> 
+                  <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+                </div>
+                <a href="../../LogicaDeSistemas.html"> Regresar al tablero</a> 
+            </div>
+        </nav>
+        <main>
+          <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Álgebra de Boole</h1>
+             <br>
+             <p>Se denomina así por George Boole, matemático. Fue el primero en definirla como parte de un sistema lógico, en sus libros.</p>
+             <br>
+             <p>Desarrolló la idea de que las proposiciones básicas podían ser tratadas mediatne herramientas matemáticas. Luego en 1938, Claude Shannon porpouso que con este álgebra es posible modelar los llamados sistemas digitales y puedo formular su teoría de la codificación y John Von Neumannn pudo enunciar el modelo de arquitectura que define la estructura intera de los ordenadores desde la primera generación.</p>
+             <br>
+             <h2>Circuito eléctrico</h2>
+             <br>
+             <p>Está conformado por un conjunto de elementos conectados entre sí por los que puede circular corriente eléctrica.</p>
+             <br>
+             <p>Se denomina así a la trayectoria cerrada que recorre una corriente eléctrica; se inicia en una de las terminales de una pila, pasa a través de un conductor eléctrico, llega a un receptor, consume parte de la energía eléctrcia, continua después por el conducto, llega a un interruptor y al terminal de la pila.</p>
+             <br>
+            <h2>Isomorfismo</h2>
+            <br>
+            <h3>Primer isomorfismo</h3>
+            <p>Puede estar cerrado o abierto.</p>
+           <br>
+           <h3>Segundo isomorfismo</h3>
+           <p>Circuito eléctrico en serie.</p>
+          <br>
+          <h3>Tercer isomorfismo</h3>
+          <p>Puede estar cerrado o abierto.</p>
+         <br>
+         <h2>Compuertas lógicas</h2><br>
+         <p>En el álgebra de Boole, se utilizan compuertas lógicas para realizar operaciones lógicas entre variables booleanas. Algunas de las compuertas lógicas más comunes son:</p>
+         <br><h3>Compuerta OR (o inclusivo)</h3>
+         <br> <p>La compuerta OR devuelve un resultado verdadero si al menos una de las variables de entrada es verdadera. Su símbolo lógico es el símbolo de suma (+) o el símbolo de la barra vertical (|).</p>
+         <br>
+         <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <img src="../../img/ImageLogica/compuertaor.jpg" alt="Compuerta OR">
+        </div>
+        </div> 
+         <br><h3>Compuerta NOT (negación)</h3>
+         <br><p>La compuerta NOT invierte el valor de la variable de entrada. Si la entrada es verdadera, la salida será falsa, y viceversa. Su símbolo lógico es una línea curva que indica la negación (~) o una barra horizontal encima de la variable (!).</p>
+         <br>
+         <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <img src="../../img/ImageLogica/compuertanot.jpg" alt="Compuerta NOT">
+        </div>
+        </div> 
+         <br><h3>Compuerta AND (y lógico)</h3>
+         <br><p>La compuerta AND devuelve un resultado verdadero solo si todas las variables de entrada son verdaderas. Su símbolo lógico es el punto (·) o el símbolo de multiplicación (*).</p>
+         <br>
+         <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <img src="../../img/ImageLogica/compuertaand.jpg" alt="Compuerta AND">
+        </div>
+        </div> 
+         <br><h2>Funciones booleanas por maxtérminos y mintérminos</h2>
+         <br><p>En el álgebra de Boole, las funciones booleanas se pueden representar utilizando expresiones lógicas llamadas maxtérminos y mintérminos.</p>
+         <br><h3>Mintérminos</h3>
+         <br><p>Los minterminos son expresiones lógicas que representan una función booleana como la conjunción de todas las variables de entrada, ya sea en su forma negada o no negada. Cada mintermino representa una combinación de valores de entrada que produce un resultado verdadero.</p>
+         <br><h3>Maxtérminos</h3>
+         <br><p>Los maxtérminos son expresiones lógicas que representan una función booleana como la disyunción de todas las variables de entrada, ya sea en su forma negada o no negada. Cada maxtérmino representa una combinación de valores de entrada que produce un resultado falso.</p>
+         <br><p>Los maxtérminos y mintérminos se utilizan para simplificar y expresar funciones booleanas de manera concisa, lo que facilita su implementación en circuitos digitales y su representación matemática.</p>
+         <br>
+         <br><h2>Simplificación algebraica</h2>
+         <br><p>Una de las ventajas del álgebra de Boole es su capacidad para simplificar expresiones lógicas complejas utilizando reglas y propiedades algebraicas. La simplificación algebraica permite reducir una expresión booleana a una forma más simple y compacta, lo que facilita su implementación y comprensión.</p>
+         <br><p>Algunas técnicas comunes de simplificación algebraica en el álgebra de Boole incluyen:</p>
+         <br><h3>Identidad booleana</h3>
+         <br><p>La identidad booleana establece que una variable booleana operada con el operador OR o AND de su mismo valor es igual a la variable original. Por ejemplo, A + A = A y A · A = A.</p>
+         <br><h3>Ley de absorción</h3>
+         <br> <p>La ley de absorción establece que una variable booleana operada con el operador OR o AND junto con su complemento es igual al valor complementario. Por ejemplo, A + (A · B) = A y A · (A + B) = A.</p>
+         <br><h3>Teorema de De Morgan</h3>
+         <br><p>El teorema de De Morgan establece que la negación de una operación lógica OR o AND entre variables es igual a la operación lógica AND o OR de las negaciones de las variables respectivas. Por ejemplo, ¬(A + B) = ¬A · ¬B y ¬(A · B) = ¬A + ¬B.</p>
+           <br>
+           <div class="contenedor-modelos"> 
+            <div class="modelos">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YeJ4palumCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Lógica de Sistemas </h2>
+                    <p> Pablo Sebastián Quan Montenegro </p>
+                    <p> Carnet: 5090-23-2625</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+function toggleSubtopics(topic) {
+  var subtemas = document.querySelectorAll('.subtema.' + topic);
+
+  subtemas.forEach(function(subtema) {
+    var display = window.getComputedStyle(subtema).getPropertyValue('display');
+    if (display === 'none') {
+      subtema.style.display = 'block';
+    } else {
+      subtema.style.display = 'none';
+    }
+  });
+}
+    </script>
+</body>
+</html>

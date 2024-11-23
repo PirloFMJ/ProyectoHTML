@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>Ciclo Contable</title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../contenidoConta/usoaplicacion.html" class="subtema tema1"> Usos y aplicaciones de la Contabilidad </a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/legislacionaplicable.html" class="subtema tema1"> Legislacion Aplicable </a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/principiosconta.html" class="subtema tema1">Principios Contabilidad</a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/legislacionempresas.html" class="subtema tema1">Legislacion aplicable a empresas </a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/organizacioncomercial.html" class="subtema tema1">Tipos de Organizaciones Comerciales</a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/empresaiva.html" class="subtema tema1">Empresa Mercantil y IVA</a></div>
+  
+    <div class="subtema tema1"><hr></div>
+    <div class="subtema tema1">Contenido Segundo Parcial</div>
+    <div class="subtema tema2"> <a href="../contenidoConta/cuentacontable.html" class="subtema tema1"> Cuenta Contable </a></div>
+    <div class="subtema tema2"> <a href="../contenidoConta/ciclocontable.html" class="subtema tema1"> Ciclo Contable </a></div>
+    <div class="subtema tema1"><hr></div>
+    <div class="subtema tema1">Contenido Examen Final</div>
+    <div class="subtema tema3"> <a href="../contenidoConta/proyectofinalconta.html" class="subtema tema1"> Proyecto Final </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../Conta.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Ciclo Contable</h1>
+             <h2> Ecuacion Patrimonial </h2>    
+             <p>  Representa la relación entre
+                ACTIVOS, PASIVOS Y CAPITAL
+                CONTABLE. De un lado están los
+                activos totales y del otro las
+                fuentes de financiamiento y los
+                derechos legales y económicos
+                sobre los activos (pasivo y capital
+                contable)
+                 </p>
+                 <div class="modelos">
+                <img src="../../img/imagesConta/ecuacionpatrimonial.jpeg" alt="Codigo Comercio" >
+                </div>
+                <h2>Clasicacion de Cuentas</h2>
+                <p>Cuando la empresa alcanza cierto grado de desarrollo, es indispensable que el
+                    listado de cuentas del catálogo se clasifique de acuerdo a la naturaleza o tipo
+                    de movimiento que se le dará.
+                    Dentro de la clasificación de cuentas se tiene</p>
+                    <table>
+                        <tr>
+                            <th>
+                                Cuenta Balance
+                            </th>
+                            <th>
+                                Cuenta Resultados
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Activos, Pasivos y Capital
+                                Son las que indican parte del patrimonio de la empresa, ya sea de bienes
+                                adquiridos o deudas por la compra de bienes.</td>
+                            <td>Son las que describen los ingresos por ventas y salidas de dinero por
+                                compras o gastos, para operar o asistir las transacciones de ventas.</td>
+                        </tr>
+                    </table>
+                    <h2>Movimientos de Partida Doble que mantienen la
+                        Ecuación Patrimonial
+                        </h2>
+                        <h3>Ejemplos</h3>
+                        <div class="modelos">
+                            <img src="../../img/imagesConta/ejemplopartidadoble.jpeg" alt="Codigo Comercio" >
+                        </div>
+                        <h2> Capital Contable </h2>
+                        <ul>
+                    <li>
+                        agrupa elementos que se muestran en la ecuación y son: el capital social que representa la aportación de los accionistas y las utilidades retenidas, que representan las utilidades generadas por el negocio y reinvertidas en éste.
+                    </li>
+                    <li>
+                        Las utilidades retenidas están integradas por las utilidades de períodos anteriores no repartidas y las utilidades del período actual, disminuidas por los dividendos (utilidades repartidas a los accionistas)
+
+                    </li>
+                </ul>
+                
+                    
+               <br>     
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Contabilidad I </h2>
+                    <p> Kevin Elias Aguin Ostorga </p>
+                    <p> Carnet: 5090-23-210</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

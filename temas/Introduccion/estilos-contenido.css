@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=EB+Garamond&display=swap'); /* TITULOS  font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=EB+Garamond&family=Josefin+Sans&family=Ysabeau:wght@300&display=swap'); /* SUBTITULOS  font-family: 'Ysabeau', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  background-color: #f8f8f8;
+}
+
+/* Division del grid */
+
+.contenedor {
+  margin: 0 auto;
+  display: grid;
+  grid-template: "nav section"
+                  "footer footer";
+  grid-template-columns: 2fr 6fr; 
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: section;
+}
+
+footer  { 
+    grid-area: footer !important;
+}
+
+/* Estilo del NAV */
+
+.navbar {
+  left: 0;
+  top: 0;
+  background-color: #9dbfaf;
+  padding: 20px;
+  position: fixed;
+  color: #183B3F;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .titulo-contenido {
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+hr {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.content-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar .subtema {
+  font-family: 'Ysabeau', sans-serif;
+  margin-left: 15px;
+  margin-top: 1px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.volver {
+      min-height: 100vh;  /* Establece la altura mínima del contenedor para ocupar al menos toda la altura de la ventana */
+      justify-content: space-between;
+      background-color: #9dbfaf;
+      padding: 20px;
+      text-align: center;
+      margin-top: auto;
+}
+
+.volver a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;    
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px;
+  background: rgb(138,179,207);
+  background: linear-gradient(0deg, rgba(138,179,207,1) 0%, rgba(228,235,240,1) 100%);
+}
+
+
+.volver a:hover {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;    
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px;
+  background: rgba(228,235,240,1);
+  background: linear-gradient(0deg,  rgba(228,235,240,1)  0%, rgba(138,179,207,1) 100%);
+}
+
+.logo a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;    
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  background: none;   
+}
+
+.logo a:hover {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;    
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  background: none;
+}
+
+.volver img {
+  margin-left: 0;
+  margin-top: auto;
+  width: 300px;
+  height: auto;
+}
+/* Estilos del Section */
+main {
+  margin: 0 auto;
+}
+
+.contenedor-contenido {
+  line-height: 1.5;
+  width: 100%;
+}
+
+.contenedor-info {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contenedor-video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.video {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+  margin: 5px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6d8b6f;
+    margin: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  color: #6d8b89; 
+  text-shadow: 0 0 2px #dcf7f3, 0 0 4px #dcf7f3, 0 0 2px #dcf7f3;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #6d8b89;
+  text-decoration: underline;
+}
+
+p {
+  color: rgb(56, 56, 56);
+}
+
+ul {
+  text-align: justify;
+  font-size: 20px;
+}
+
+table {
+  border: 2px solid #183B3F;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+table td, table th {
+  width: 20%;
+  border: 1px solid #0ca5b0;
+  border-radius: 20px;
+  padding: 2%;
+}
+
+table td img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.contenedor-modelos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.modelos {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modelos img {
+  box-shadow: 2px 2px 60px gray;
+  margin: 20px;
+  width: 40%;
+  border-radius: 30px;
+}
+
+.contenedor-footer {
+  width: 100%;
+  background-color: #183B3F;
+  padding: 20px;
+  position: absolute;
+}
+
+.contenedor-footer h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contenido-footer {
+  text-align: center;
+}
+
+.contenido-footer p {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+iframe {
+  box-shadow: 2px 2px 20px gray;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+      margin: 0 auto;
+      display: grid;
+      grid-template: "section"
+                      "footer";
+      grid-template-rows: 5fr 0fr;
+  }
+
+  main {
+      grid-area: section;
+  }
+
+  footer  { 
+      grid-area: footer !important;
+  }
+  .navbar {
+    display: none;
+  }
+  
+}
+
+
+@media (max-width: 1440px) {
+  .contenedor {
+      margin: 0 auto;
+      display: grid;
+      grid-template: "nav section";
+      grid-template-columns: 0fr 1fr;
+  }
+}
+
+@media (max-width: 816px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .contenedor {
+      margin: 0 auto;
+      display: grid;
+      grid-template: "section"
+                      "footer";
+      grid-template-rows: 5fr 0fr;
+  }
+
+  main {
+      grid-area: section;
+  }
+
+  footer  { 
+      grid-area: footer !important;
+  }
+  .contenedor {
+      margin: 0 auto;
+      display: grid;
+      grid-template: "nav section";
+      grid-template-columns: 0fr 12fr;
+  }
+}
+
+  @media (min-width: 820px) and (max-width: 912px) {
+  .navbar {
+  display: none;
+}
+.contenedor {
+  margin: 0 auto;
+  display: grid;
+  grid-template: "nav section";
+  grid-template-columns: 1fr 11fr;
+}
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>Empresa Mercantil y IVA</title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../contenidoConta/usoaplicacion.html" class="subtema tema1"> Usos y aplicaciones de la Contabilidad </a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/legislacionaplicable.html" class="subtema tema1"> Legislacion Aplicable </a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/principiosconta.html" class="subtema tema1">Principios Contabilidad</a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/legislacionempresas.html" class="subtema tema1">Legislacion aplicable a empresas </a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/organizacioncomercial.html" class="subtema tema1">Tipos de Organizaciones Comerciales</a></div>
+          <div class="subtema tema1"> <a href="../contenidoConta/empresaiva.html" class="subtema tema1">Empresa Mercantil y IVA</a></div>
+  
+    <div class="subtema tema1"><hr></div>
+    <div class="subtema tema1">Contenido Segundo Parcial</div>
+    <div class="subtema tema2"> <a href="../contenidoConta/cuentacontable.html" class="subtema tema1"> Cuenta Contable </a></div>
+    <div class="subtema tema2"> <a href="../contenidoConta/ciclocontable.html" class="subtema tema1"> Ciclo Contable </a></div>
+    <div class="subtema tema1"><hr></div>
+    <div class="subtema tema1">Contenido Examen Final</div>
+    <div class="subtema tema3"> <a href="../contenidoConta/proyectofinalconta.html" class="subtema tema1"> Proyecto Final </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../Conta.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Empresa y IVA</h1>
+             <h2> IVA </h2>    
+             <p>s el impuesto que más dinero genera para el Estado, lo paga toda persona que compra algún bien o adquiere un servicio. Esta normado por el Decreto 27-92. La tarifa del IVA es del 12% del valor de cada producto o servicio y está siempre incluida en los precios de todo lo que compramos.</p>
+                <br>
+             <h3>Calculo IVA</h3>
+             <div class="modelos">
+                <img src="../../img/imagesConta/calculoiva.png" alt="Codigo Comercio" >
+                </div>
+                <h2>Persona Juridica</h2>
+                <p> Individuo o entidad que, sin tener existencia individual física, está sujeta a derechos y obligaciones</p>
+             <br>
+                <h2>Sociedad mercantil</h2>   
+            <p>Es el resultado de la combinación del talento y los recursos económicos de varias personas, con el propósito de hacer más factible la realización de una empresa.</p>
+             
+        
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Contabilidad I </h2>
+                    <p> Kevin Elias Aguin Ostorga </p>
+                    <p> Carnet: 5090-23-210</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>  Lógica de Sistemas </title>
+</head>
+<body>
+    <section class="contenedor">
+        <nav class="navbar">
+            <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+            <div class="subtema tema1">Contenido Primer Parcial</div>
+            <div class="subtema tema1"> <a href="intrologica.html" class="subtema tema1">Introducción a la lógica</a></div>
+            <div class="subtema tema1"> <a href="silogismos.html" class="subtema tema1">Silogismos</a></div>
+            <div class="subtema tema1"> <a href="teoriaconjuntos.html" class="subtema tema1">Teoría de conjuntos (Lógica de clases)</a></div>
+            <div class="subtema tema1"><hr></div>
+            <div class="subtema tema1">Contenido Segundo Parcial</div>
+            <div class="subtema tema2"> <a href="logicaproposicional.html" class="subtema tema1">Lógica proposicional</a></div>
+            <div class="subtema tema2"> <a href="dedunatural.html" class="subtema tema1">Deducción natural</a></div>
+            <div class="subtema tema1"><hr></div>
+            <div class="subtema tema1">Contenido Examen Final</div>
+            <div class="subtema tema3"> <a href="algboole.html" class="subtema tema1">Álgebra de Boole</a></div>
+            <div class="subtema tema3"> <a href="logipredicados.html" class="subtema tema1">Lógica de predicados</a></div>
+            <div class="subtema tema3"> <a href="uml.html" class="subtema tema1">UML</a></div>
+            <div class="subtema tema1"><hr></div>
+            <div class="volver"> 
+            <div class="logo"> 
+              <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+            </div>
+            <a href="../../LogicaDeSistemas.html"> Regresar al tablero</a> 
+        </div>
+    </nav>
+<main>
+  <div class="contenedor-contenido">
+    <div class="contenedor-info">
+     <h1>Deducción natural</h1>
+     <h2>Demostración por deducción natural</h2>
+     <br>
+     <h3>Implicación lógica</h3>
+     <br>
+     <p>Si una condicional (si... entonces) es una proposición de la forma P(p, q, r ,s) que implica una proposición, se dice que P implica Q... es verdaero todas las veces que P sea verdadera.</p>
+     <br>
+     <h3>Equivalencia lógica</h3>
+     <br>
+     <p>Una proposición P(p, q, r, s) es lógicamente a una proposición Q(p, q, r, s) si sus tablas de verdad son idénticas, es decir, tienen los mismos valores de verdad. Por lo tanto, la expresión lógica puede ser reemplazada por la otra.</p>
+     <br>
+     <h2>Deducción natural (método formal)</h2>
+     <br>
+     <p>Este método mejora el cálculo de validez lógica aplicando reglas de inferencia, reglas que son útiles para argumentos con más de 2 premisas, se compelmenta el estudio con las reglas de reemplazo.</p>
+     <br>
+     <p>Es simple, versátil y efectivo, permitirá rápidamente analizar la validez de un enunciado.</p>
+     <br>
+     <p>La deducción natural fue introducida por Gehard Gentzen, matemático lógico alemán, trabajó en investigaciones sobre la inferencia lógica, publicado en 1934-1935.</p>
+    <br>
+     <div class="contenedor-modelos"> 
+      <div class="modelos">
+        <img src="../../img/ImageLogica/gehard.jpg" alt="Gehard Gentzen">
+    </div>
+    </div> 
+    <br>
+    <p>Esta prueba está constituida por una sucesión de enunciados de los cuales algunos son premisas del argumento a ser válido, y otros son incorporados en el curso de la prueba leugo de ser deducidos a través de la deducción natural.</p>
+    <br>
+    <h2>Reglas de Inferencia</h2>
+    <br>
+    <h3>Modus Ponens</h3>
+    <br>
+    <p>El Modus Ponens es una regla de inferencia lógica que establece que si tenemos una afirmación condicional "Si p, entonces q" y sabemos que p es verdadero, entonces podemos concluir que q es verdadero.</p>
+    <br>
+    <h3>Modus Tollens</h3>
+    <br>
+    <p>El Modus Tollens es una regla de inferencia que se utiliza para inferir la negación de la consecuencia de una afirmación condicional. Si tenemos una afirmación condicional "Si p, entonces q" y sabemos que q es falso, entonces podemos concluir que p también es falso.</p>
+    <br>
+    <h3>Silogismo Hipotético</h3>
+    <br>
+    <p>El Silogismo Hipotético es una regla de inferencia que establece que si tenemos dos afirmaciones condicionales "Si p, entonces q" y "Si q, entonces r", entonces podemos inferir que "Si p, entonces r".</p>
+    <br>
+    <h3>Silogismo Disyuntivo</h3>
+    <br>
+    <p>El Silogismo Disyuntivo es una regla de inferencia que se utiliza para inferir la verdad de una disyunción. Si tenemos una afirmación disyuntiva "p o q" y sabemos que p es falso, entonces podemos concluir que q es verdadero.</p>
+    <br>
+    <h3>Reducción al Absurdo</h3>
+    <br>
+    <p>La Reducción al Absurdo es una regla de inferencia que se utiliza para demostrar la verdad de una afirmación condicional al suponer su negación y llevar esa suposición a una contradicción lógica.</p> 
+     <br>
+     <h2>Reglas de reemplazo</h2>
+     <br>
+    <h3>Regla de reemplazo: Idempotencia</h3>
+<br>
+<p>La regla de reemplazo de idempotencia establece que una operación aplicada repetidamente a un valor produce el mismo resultado que aplicarla una sola vez.</p>
+<br>
+<h3>Regla de reemplazo: Asociativa</h3>
+<br>
+<p>La regla de reemplazo asociativa permite cambiar el agrupamiento de las operaciones sin alterar el resultado final.</p>
+<br>
+<h3>Regla de reemplazo: Conmutativa</h3>
+<br>
+<p>La regla de reemplazo conmutativa establece que el orden de los elementos en una operación no afecta el resultado final.</p>
+<br>
+<h3>Regla de reemplazo: Distributiva</h3>
+<br>
+<p>La regla de reemplazo distributiva permite expandir una operación sobre una suma o una resta, distribuyendo los términos.</p>
+<br>
+<h3>Regla de reemplazo: De Morgan</h3>
+<br>
+<p>La regla de reemplazo de De Morgan establece que la negación de una conjunción (AND) o de una disyunción (OR) se puede reemplazar por la disyunción de las negaciones o la conjunción de las negaciones, respectivamente.</p>
+<br>
+<h3>Regla de reemplazo: Eliminación de doble negación</h3>
+<br>
+<p>La regla de reemplazo de eliminación de doble negación establece que si una expresión tiene una doble negación, se puede eliminar para obtener una expresión equivalente.</p>
+<br>
+<div class="contenedor-modelos"> 
+  <div class="modelos">
+    <img src="../../img/ImageLogica/dedunatu.jpg" alt="Deduccion natural">
+</div>
+</div> 
+<br>
+<h2>Demostración por método de reducción al absurdo</h2>
+<br>
+<p>La demostración por método de reducción al absurdo es una técnica utilizada en lógica y matemáticas para demostrar la veracidad de una afirmación a través de la contradicción. En este método, se supone inicialmente la negación de la afirmación a demostrar y se llega a una contradicción lógica. Esto implica que la suposición inicial es falsa, por lo tanto, la afirmación original es verdadera.</p>
+<br><h3>Proceso</h3>
+<br><p>El proceso de la demostración por reducción al absurdo consta de los siguientes pasos:</p>
+<br><ol>
+<li><p>Suposición de la negación de la afirmación a demostrar.</p></li>
+<li><p>Realización de una serie de razonamientos y argumentos lógicos basados en la suposición inicial.</p></li>
+<li><p>Llegar a una contradicción, es decir, una afirmación que se sabe que es falsa.</p></li>
+<li><p>Concluir que la suposición inicial es falsa y, por lo tanto, la afirmación original es verdadera.</p></li>
+</ol><br>
+<h3>Ejemplo</h3>
+<br><p>Para ilustrar el método de reducción al absurdo, consideremos el siguiente ejemplo:</p>
+<br><h3>Afirmación:</h3>
+<br><p>Todo número par es divisible por 2.</p>
+<br><h3>Suposición:</h3>
+<br><p>Supongamos que existiera un número par que no es divisible por 2.</p>
+<br><h3>Razonamiento:</h3>
+<br><p>Si tenemos un número par que no es divisible por 2, entonces viola la definición de número par.</p>
+<br> <p>Si suponemos que el número par no es divisible por 2, podemos expresarlo como el producto de otro número y 2 más un valor impar.</p>
+<br><p>Esto nos lleva a una contradicción, ya que cualquier número par es divisible por 2.</p>
+<br><h3>Conclusión:</h3>
+<br><p>Como llegamos a una contradicción, nuestra suposición inicial de que existe un número par no divisible por 2 es falsa. Por lo tanto, podemos concluir que todo número par es divisible por 2.</p>
+<br>
+<div class="contenedor-modelos"> 
+  <div class="modelos">
+    <img src="../../img/ImageLogica/dedunatu2.jpg" alt="Deduccion natural">
+</div>
+</div> 
+<br>
+<h2>Método de cálculo por deducción natural</h2>
+<br>
+<p>El método de cálculo por deducción natural es una herramienta utilizada en lógica y matemáticas para construir y demostrar argumentos válidos. Este método se basa en reglas y axiomas que permiten derivar conclusiones lógicas a partir de premisas. La deducción natural proporciona una estructura formal para la inferencia válida y se utiliza ampliamente en el razonamiento deductivo.</p>
+<br> 
+<h3>Reglas básicas</h3>
+<br>
+<p>El método de cálculo por deducción natural se basa en reglas lógicas que permiten inferir conclusiones a partir de premisas. Algunas de las reglas básicas utilizadas en el método son:</p>
+<ul><br>
+<li><p>Regla de introducción de la implicación: Permite introducir una implicación si se puede demostrar la conclusión a partir de una hipótesis.</p></li>
+<br><li><p>Regla de eliminación de la implicación: Permite inferir la conclusión de una implicación si se tienen ambas partes de la implicación.</p></li>
+<br><li><p>Regla de introducción de la conjunción: Permite introducir una conjunción si se pueden demostrar ambas proposiciones que la componen.</p></li>
+<br><li><p>Regla de eliminación de la conjunción: Permite inferir las proposiciones que componen una conjunción si se tiene la conjunción.</p></li>
+<br><li><p>Regla de introducción del disyunción: Permite introducir una disyunción si se puede demostrar una de las proposiciones disyuntivas.</p></li>
+<br><li><p>Regla de eliminación del disyunción: Permite inferir una conclusión a partir de una disyunción, considerando ambos casos posibles.</p></li>
+<br><li><p>Regla de introducción del negación: Permite introducir la negación de una proposición si se puede demostrar una contradicción a partir de esa proposición.</p></li>
+<br><li><p>Regla de eliminación del negación: Permite inferir una contradicción a partir de una proposición y su negación.</p></li>
+</ul>
+<br><h3>Ejemplo</h3>
+<br><p>Para ilustrar el método de cálculo por deducción natural, consideremos el siguiente ejemplo:</p>
+<br><h3>Argumento:</h3>
+<br><p>Si llueve, entonces la calle estará mojada. La calle está mojada. Por lo tanto, está lloviendo.</p>
+<br><h3>Derivación:</h3>
+<br><p>1. Supongamos que llueve (hipótesis).</p>
+<br><p>2. Si llueve, entonces la calle estará mojada (premisa).</p>
+<br><p>3. La calle está mojada (premisa).</p>
+<br><p>4. De 1 y 2, podemos inferir que la calle estará mojada.</p>
+<br><p>5. De 3 y 4, podemos concluir que está lloviendo.</p>
+<br><h3>Conclusión:</h3>
+<br> <p>Mediante la aplicación de las reglas de deducción natural, hemos demostrado que si la calle está mojada, entonces está lloviendo.</p>
+<br>
+<h2>Reducción al absurdo mediante el sistema de inferencia natural (IN)</h2><br>
+<br><p>La reducción al absurdo es una técnica utilizada en lógica y matemáticas para demostrar la veracidad de una afirmación mediante la contradicción. El sistema de inferencia natural (IN) es un marco formal de razonamiento lógico que permite aplicar reglas de inferencia para derivar conclusiones válidas. La combinación de la reducción al absurdo y el sistema de inferencia natural ofrece un método riguroso para demostrar proposiciones.</p>
+<br><h3>Proceso de reducción al absurdo</h3>
+<br><p>El proceso de reducción al absurdo mediante el sistema de inferencia natural sigue los siguientes pasos:</p>
+<br><ol>
+<li><p>Suposición de la negación de la afirmación a demostrar.</p></li>
+<li><p>Aplicación de las reglas de inferencia del sistema de inferencia natural para deducir nuevas conclusiones.</p></li>
+<li><p>Llegar a una contradicción lógica o a una afirmación conocida como falsa.</p></li>
+<li><p>Concluir que la suposición inicial es falsa y, por lo tanto, la afirmación original es verdadera.</p></li>
+ </ol><br>
+     <div class="contenedor-modelos"> 
+      <div class="modelos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rLa7Mybrndo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </div> 
+     <br>
+</main>
+            
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Lógica de Sistemas </h2>
+                    <p> Pablo Sebastián Quan Montenegro </p>
+                    <p> Carnet: 5090-23-2625</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script>
+function toggleSubtopics(topic) {
+  var subtemas = document.querySelectorAll('.subtema.' + topic);
+
+  subtemas.forEach(function(subtema) {
+    var display = window.getComputedStyle(subtema).getPropertyValue('display');
+    if (display === 'none') {
+      subtema.style.display = 'block';
+    } else {
+      subtema.style.display = 'none';
+    }
+  });
+}
+    </script>
+</body>
+</html>

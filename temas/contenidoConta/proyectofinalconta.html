@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>Proyecto Final Contabilidad</title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../contenidoConta/usoaplicacion.html" class="subtema tema1"> Usos y aplicaciones de la Contabilidad </a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/legislacionaplicable.html" class="subtema tema1"> Legislacion Aplicable </a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/principiosconta.html" class="subtema tema1">Principios Contabilidad</a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/legislacionempresas.html" class="subtema tema1">Legislacion aplicable a empresas </a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/organizacioncomercial.html" class="subtema tema1">Tipos de Organizaciones Comerciales</a></div>
+                <div class="subtema tema1"> <a href="../contenidoConta/empresaiva.html" class="subtema tema1">Empresa Mercantil y IVA</a></div>
+        
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../contenidoConta/cuentacontable.html" class="subtema tema1"> Cuenta Contable </a></div>
+          <div class="subtema tema2"> <a href="../contenidoConta/ciclocontable.html" class="subtema tema1"> Ciclo Contable </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../contenidoConta/proyectofinalconta.html" class="subtema tema1"> Proyecto Final </a></div>
+         
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../Conta.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Proyecto Final</h1>
+             <h2>¿Quienes somos?</h2>
+             <p>Somos una empresa localizada en Guatemala, especializada en la compra y venta de productos tecnológicos con la finalidad de aportar en la economía guatemalteca y contribuir al desarrollo social por medio de nuestras condiciones laborales como lo son salarios dignos y prestaciones laborales, además de representar valores como la hermandad, empatía y justicia. 
+
+                Contamos con un equipo especializado que constantemente es capacitado y aprende en cómo ofrecer un mejor servicio al cliente, además que se encargan de comprobar que los productos se encuentren en una excelente calidad para asegurarnos de la satisfacción del cliente. 
+                
+                Nuestro mayor deseo es ofrecer la mejor calidad con los mejores precios en una amplia variedad de productos como lo son computadoras, consolas, videojuegos y gadgets tecnológicos.</p>
+        
+                <h2>Mision</h2>
+                <p>
+                    Ofrecer una amplia variedad de productos tecnológicos de alta calidad al mejor precio para el bolsillo guatemalteco, proveyendo el mejor servicio al cliente para su satisfacción.
+                </p>
+                <h2>Vision</h2>
+                <p>
+                    Ser líderes y contribuir en el desarrollo económico y tecnológico de Guatemala con precios asequibles, además de formar a cientos de empleados en su ámbito laboral, ofreciendo y promoviendo prestaciones justas y dignas para los trabajadores guatemaltecos.
+                </p>
+                <h2>Nuestro Catalogo</h2>
+
+                <div class="contenedor-video">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFjxAd5amw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+</div>
+
+<h2>logo de la empresa TECHPLUS</h2>
+<div class="modelos">
+    <img src="../../img/imagesConta/techplus.jpg" alt="Logotipo" >
+</div>
+            </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Contabilidad I </h2>
+                    <p> Kevin Elias Aguin Ostorga </p>
+                    <p> Carnet: 5090-23-210</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

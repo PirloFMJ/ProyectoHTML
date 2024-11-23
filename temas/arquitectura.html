@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./estilos-contenido.css">
+    <title>Arquitectura de una Computadora</title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../temas/historia.html" class="subtema tema1"> Historia de la Computadora </a></div>
+          <div class="subtema tema1"> <a href="../temas/conceptos.html" class="subtema tema1"> Conceptos Básicos </a></div>
+          <div class="subtema tema1"> <a href="../temas/arquitectura.html" class="subtema tema1">Arquitectura de una Computadora</a></div>
+          <div class="subtema tema1"> <a href="../temas/sistemas.html" class="subtema tema1">Sistemas Operativos </a></div>
+          <div class="subtema tema1"> <a href="../temas/recursos.html" class="subtema tema1">Recursos Administrados por el Sistema Operativo</a></div>
+          <div class="subtema tema1"> <a href="../temas/linux.html" class="subtema tema1">Linux</a></div>
+          <div class="subtema tema1"> <a href="../temas/virtualizacion.html" class="subtema tema1">Virtualización y Linux</a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../temas/bases.html" class="subtema tema1"> Bases de Datos </a></div>
+          <div class="subtema tema2"> <a href="../temas/redes.html" class="subtema tema1"> Redes </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../temas/desarrollo.html" class="subtema tema1"> Desarrollo WEB </a></div>
+          <div class="subtema tema3"> <a href="../temas/html.html" class="subtema tema1"> HTML </a></div>
+          <div class="subtema tema3"> <a href="../temas/css.html" class="subtema tema1"> CSS </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../intro.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Arquitectura de una Computadora</h1>
+              <p>
+                El concepto de arquitectura en el entorno informatico proporciona una descripcién de la construcci6n y distribucion fisica de los componentes de 
+                la computadora.
+              </p>
+              <p>
+                La arquitectura de una computadora explica la situaci6n de sus componentes y permite determinar las posibilidades de que un sistema informatico, con una 
+                determinada configuracién, pueda realizar las operaciones para las que se va a utilizar.
+              </p>
+              <h2> Componentes Básicos de una Computadora </h2>
+              <p>
+                <ul>
+                  <li>MotherBoard</li>
+                  <li> La CPU </li>
+                  <li> La Memoria </li>
+                  <li> Los Buses </li>
+                  <li> La Fuente de Alimentación </li>
+                </ul>
+              </p>
+              <h2> Estructura de una Computadora y sus Perifericos </h2>
+                <div class="contenedor-modelos">
+                  <div class="modelos">
+                    <img src="../img/imagenes-contenido/estructura.jpg" alt="Estructura de una Computadora y sus Perifericos">
+                  </div>
+                </div>
+               <h2> ¿Que es la Motherboard?</h2> 
+                <p>
+                  La “tarjeta principal“ (mainboard), o “tarjeta madre" (motherboard), es el elemento principal de toda computadora, en el que se encuentran o al que se 
+                  conectan todos los demas dispositivos.
+                  </p>
+                  <p> Fisicamente, se trata de una “tarjeta” de material sintético, sobre la cual existe un circuito impreso que conecta diversos elementos que se encuentran
+                     anclados sobre ella.
+                </p>
+                <h3> Componentes de la Tarjeta Principal </h3>
+                <ul>
+                  <li> Zócalo del Microprocesador </li>
+                  <li> Ranuras de memoria (SIMM, DIMM) </li>
+                  <li> Chipset de Control </li>
+                  <li> BIOS </li>
+                  <li> Slots de Expansión (ISA, PCI, AGP...) </li>
+                  <li> Memoria Caché </li>
+                  <li> Conectores Internos </li>
+                  <li> Conectores Externos </li>
+                  <li> Conector Eléctrico </li>
+                  <li> Pila </li>
+                  <li> Elementos Integrados Variados </li>
+                </ul>
+                <div class="contenedor-modelos">
+                  <div class="modelos">
+                    <img src="../img/imagenes-contenido/tarjeta.jpg" alt="Componentes de la Tarjeta Principal">
+                  </div>
+                </div>
+                <h2> CPU </h2>
+                <p>
+                  El CPU o Unidad de Procesamiento Central, es la parte central de toda computadora ya que es la que cumple la tarea de procesamiento de todas las funciones 
+                  asi como también de almacenamiento de la informacion. Es un circuito electronico que ha existido desde siempre en las computadoras sin importar su modelo y 
+                  es por eso que es considerado uno de los elementos basicos de cualquier computador.
+                </p>
+                <h3> Ciclos de Reloj </h3>
+                <p>
+                  Casi todas las computadoras son construidas usando un reloj (Oscilador de cristal), que es utilizado para sincronizar los eventos u operaciones: 
+                  determinando cuando ocurren (el paso) en el hardware.
+                </p>
+                <p>
+                  Estos Intervalos de tiempo, se denominan ciclos de reloj, Los ciclos de reloj (Ej: 400 picosegundos (ps)) se suelen transformar o usar como frecuencia de 
+                  reloj (2.5 gigahertz (GHz))
+                </p>
+                <h2> Los Buses </h2>
+                <p>
+                  Los buses son los canales de datos que interconectan los componentes de la PC.  Algunos estan diseñados para transferencias pequeñas, y otros para
+                   transferencias mayores.
+                </p>
+                <p>
+                  Originalmente las primeras IBM PC, contaban con un bus unico para interconectar todas las componentes del sistema, llamado BUS DEL SISTEMA, Con el tiempo éste
+                  empezo a ser incapaz de soportar los caudales de datos que requerian todos los componentes
+                </p>
+                <p>
+                  EI bus mas importante de la PC se encarga del trafico “pesado” entre la CPU y la memoria RAM conocido como : <strong> Bus Frontal o Frontal Side Bus (FSB) </strong>
+                  o <strong> Bus del sistema </strong> ( en PCs mas antiguas) 
+                </p>
+                <h3>
+                  Bus PCI
+                </h3>
+                <p>
+                  <ul>
+                    <li> Bus de expansion disefiado para los iX86 y Pentium </li> 
+                    <li> Actualmente se encuentra en todos los computadores personales </li> 
+                    <li> Soporta hasta 10 periféricos de alta velocidad.</li> 
+                    <li> Permite conexién con otros buses mas </li>
+                    <li> Bus de datos de 32 bits en la verción 2.0 y bus de direcciones de 32 bits </li>
+                    <li> Funciona a 33 Mhz (Version 2.0) o a 66 Mhz (version 2.1) </li>
+                  </ul> 
+                </p>
+                <p>
+                  La diferencia fundamental entre las diferentes versiones de buses PCI es principalmente la capacidad de datos que pueden procesar en una unidad de tiempo, 
+                  es decir, el ancho de banda que son capaces de soportar.
+                  <br>
+                  Este ancho de banda maximo o teorico se calcula multiplicando el numero de bits
+                  utilizado por el bus para transferir datos en paralelo por la frecuencia de
+                  funcionamiento.
+                </p>
+
+                <p> El bus PCI estandar utiliza datos de 32 bits y funciona a una frecuencia de 33 MHz. maximo ancho de banda admiten estos buses es de: 32 bits = 4 bytes por 
+                    cliclo de reloj 4 * 33.333 = 133.332 KBps = 133 MBps.
+                  <br>
+                  Algunas placas utilizan buses PCI de 32 bits y 66 MHz, aumentando asi la capacidad
+                  maxima de transferencia de los PCI originales, hasta 266 MBps.
+                </p>
+
+                <h2>Generación de Microprocesadores </h2>
+                  <div class="contenedor-modelos">
+                    <div class="modelos">
+                      <img src="../img/imagenes-contenido/generacionesProcesadores.JPG" alt="">
+                    </div>
+                  </div>
+                  <h3> Arquitectura RISC y Cisc </h3>
+                    <p>
+                      Los procesadores de arquitectura CISC son los procesadores Intel Core y AMD Ryzen, por ejemplo. Mientras que los procesadores de arquitectura RISC 
+                      son los utilizados para smartphone, como puedan ser los Qualcomm Snapdragon y Samsung Exynos. Cada una de estas arquitecturas de procesadores 
+                      tienen unas características bastante diferenciables entre ellas y los usos son diferentes. Podemos resumir las diferencias de estos en que los 
+                      procesadores CISC son de fuerza bruta y los procesadores RISC son eficientes.
+                    </p>
+                    <h3> Procesadores de 32 y 64 bits </h3>
+                      <p>
+                        En el mundo de la informática, los 32 y 64 bits se refieren al tipo de unidad central de proceso o CPU, al sistema operativo, los drivers y el 
+                        software. Todos ellos utilizan una misma arquitectura. De esta manera todos los componentes hablan "el mismo idioma", y pueden funcionar 
+                        correctamente los únicos con los otros.
+                      </p>
+                      <p>
+                        Por lo general, las arquitecturas más utilizadas a día de hoy son dos. Por un lado están las de 32 bits, a cuyo software es conocido también como x86, y por otra el hardware de 64 bits cuyo software se conoce también como x64 o un x86-64 al que a su vez también se conoce como AMD64.
+                        Las nomenclaturas se refieren a cómo se almacenan los datos. Como su nombre sugiere, los sistemas de 32 bits almacenan sus datos en piezas de 32 bits, mientras que los otros 
+                        lo hacen con piezas de 64. Esto puede decir que, por lo general, al trabajar con "palabras" más grandes puedes hacer más en menos tiempo, lo que 
+                        facilita que puedas llegar a hacer más en menos tiempo.
+                      </p>
+                      <p>
+                        La principal diferencia entre ambas arquitecturas es que los procesadores de 32 bits no son capaces de gestionar tanta memoria RAM como los de 64. 
+                        Tengas en tu ordenador 8 o 16 GB de RAM, un sistema operativo de 32 bits sólo puede aprovechar un máximo de 4 GB. Los de 64 bits pueden utilizar
+                         muchísima más, teóricamente hasta 16 Exabytes, unos 16 millones de Terabytes.
+                        Aún así de momento estamos lejos de que haya ordenadores domésticos capaces de montar tanta RAM, y desde luego los sistemas operativos tampoco 
+                        llegan a esas cantidades en sus topes. Por ejemplo, la versión Home de Windows 10 de 64 bits puede trabajar con hasta 128 GB, y la versión Pro 
+                        puede con hasta 512 GB de RAM.
+                      </p>
+                  <h2>Evolucion de los procesadores INTEL </h2>
+            <div class="contenedor-video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7ozWGZBu8P8" title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           </div>     
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Introducción a los Sistemas de Computo </h2>
+                    <p> Jorge Mario Folgar Martínez </p>
+                    <p> Carnet: 5090-23-5008</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

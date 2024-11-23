@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>  Lógica de Sistemas  </title>
+</head>
+<body>
+    <section class="contenedor">
+      <nav class="navbar">
+        <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+        <div class="subtema tema1">Contenido Primer Parcial</div>
+        <div class="subtema tema1"> <a href="intrologica.html" class="subtema tema1">Introducción a la lógica</a></div>
+        <div class="subtema tema1"> <a href="silogismos.html" class="subtema tema1">Silogismos</a></div>
+        <div class="subtema tema1"> <a href="teoriaconjuntos.html" class="subtema tema1">Teoría de conjuntos (Lógica de clases)</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="subtema tema1">Contenido Segundo Parcial</div>
+        <div class="subtema tema2"> <a href="logicaproposicional.html" class="subtema tema1">Lógica proposicional</a></div>
+        <div class="subtema tema2"> <a href="dedunatural.html" class="subtema tema1">Deducción natural</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="subtema tema1">Contenido Examen Final</div>
+        <div class="subtema tema3"> <a href="algboole.html" class="subtema tema1">Álgebra de Boole</a></div>
+        <div class="subtema tema3"> <a href="logipredicados.html" class="subtema tema1">Lógica de predicados</a></div>
+        <div class="subtema tema3"> <a href="uml.html" class="subtema tema1">UML</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="volver"> 
+        <div class="logo"> 
+          <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+        </div>
+        <a href="../../LogicaDeSistemas.html"> Regresar al tablero</a> 
+    </div>
+</nav>
+<main>
+  <div class="contenedor-contenido">
+    <div class="contenedor-info">
+      <body>
+        <h1>Lógica de Predicados</h1>
+      <br>
+        <h2>Introducción</h2>
+        <br>
+        <p>Está basada en la idea de que las sentencias  realmente expresan relaciones entre objetos, así como sus cualidades y atributos.  Los objetos pueden ser personas, cosas físicas  o conceptos. Tales cualidades, relaciones o  atributos, se denominan predicados. Los objetos  se conocen como argumentos o términos del  predicado.</p>
+        <br>
+        <p>Al igual que las proposiciones, los predicados  tienen un valor de veracidad, pero a diferencia de  aquéllas, su valor de verdad depende de sus  términos, es decir, un predicado puede ser  verdadero para un conjunto de términos, pero  falso para otro.</p>
+        <br>
+        <p>Los predicados también pueden ser utilizados  para asignar una cualidad abstracta a sus  términos, o para representar acciones o  relaciones de acción entre dos objetos.</p>
+        <br>
+        <p>Al construir los predicados, se asume que su  veracidad está basada en su relación con el  mundo real. Naturalmente, siendo prácticos,  trataremos que los predicados que definamos estén de acuerdo con el mundo que conocemos, pero no es absolutamente necesario que así lo hagamos. En la Lógica de  predicados, establecer como verdadero un  predicado es suficiente para que así sea considerado.</p>
+        <br>
+        <p>La Lógica de Predicados se ocupa únicamente de métodos de argumentación sólidos. Tales argumentaciones se denominan Reglas de Inferencia. Si se da un conjunto de axiomas que  son aceptados como verdaderos, las reglas de  inferencia garantizan que sólo serán derivadas  consecuencias verdaderas.</p>
+        <br>
+        <p>Tanto los conectivos lógicos, como los operadores dados anteriormente para la Lógica  Proposicional, son igualmente válidos en Lógica  de Predicados. De hecho, la Lógica  Proposicional es un subconjunto de la Lógica de  Predicados.</p>
+        <br>
+        <h2>Cuantificadores</h2>
+        <br>
+        <p>Las variables también pueden ser cuantificadas. Los cuantificadores que típicamente se utilizan  en la Lógica de Predicados son:</p>
+        <br>
+        <ul>
+          <li><p>El cuantificador universal ∀: indica que la fórmula bien formada, dentro de su alcance, es verdadera para todos los valores posibles de la variable que es cuantificada.</p></li>
+          <li><p>El cuantificador existencial ∃: determina que la  fórmula bien formada, dentro de su alcance, es  verdadera para algún valor o valores dentro del  dominio.</p></li>     
+        </ul>
+        <br>
+        <p>Desde el punto de vista de la representación, los  cuantificadores son difíciles de usar, por lo que es deseable reemplazarlos con alguna  equivalente más fácil de manipular. El caso del cuantificador universal es más simple, ya que se  asume a todas las variables como  universalmente cuantificadas.</p>
+        <br>
+        <p>El cuantificador existencial es más difícil de  reemplazar. Garantiza la existencia de uno o  más valores particulares (instancias) de la  variable cuantificada, que hace a la cláusula  verdadera. Si se asume que existe una función  capaz de determinar los valores de la variable  que hace la cláusula verdadera, entonces  simplemente se remueve el cuantificador  existencial y se reemplazan las variables por la  función que retorna dichos valores. Para la  resolución de problemas reales, esta función,  llamada función de Skolem, debe ser conocida y  definida.</p>
+        <br>
+        <h2>Unificación</h2>
+        <br>
+        <p>Cuando se tienen sentencias compuestas por  predicados y conectivos lógicos, se debe  evaluar la veracidad de cada uno de sus  componentes para determinar si toda la  sentencia es verdadera o falsa. Para ello, se  busca en el conjunto de axiomas la forma de  establecer la veracidad de los predicados  componentes. Un predicado componente se  dice que es verdadero, si se identifica con un  axioma de la base de información. En la Lógica de Predicados, este proceso es algo complicado, ya que las sentencias pueden tener  términos variables. A los predicados que tienen  variables por argumentos, se les denomina  patrones.</p>
+        <br>
+        <p>La unificación es el proceso de computar las  sustituciones apropiadas que permitan  determinar si dos expresiones lógicas, ya sean predicados o patrones, coinciden.</p>
+        <br>
+        <p>El proceso de unificación involucra los  siguientes pasos:</p>
+        <br>
+        <ul>
+          <li><p>Todo predicado que no contenga variables  en sus argumentos, deben tener un axioma que  se identifique, totalmente, para considerarlo  como verdadero.</p></li>
+          <li><p>Si un predicado contiene una variable, ésta  debe ser asociada a un valor determinado. Esta asociación se realiza buscando en la base de axiomas y seleccionando todos aquellos que se  identifiquen con el patrón en todo, excepto por la  variable. La variable es asociada con el valor en  la posición correspondiente del axioma. Si más de un axioma se identifica con el predicado  dado, todos los valores asociados son considerados y tratados separadamente.</p></li>     
+          <li><p>El proceso de identificación continúa,  asumiendo que el valor de la variable es el valor  asociado, en cualquier lugar que ésta aparezca.</p></li>
+          <li><p>Los conectivos lógicos son aplicados a  todos los predicados para determinar la  veracidad de la sentencia dada.</p></li>
+        </ul>
+        <br>
+        <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <img src="../../img/ImageLogica/logipredicado.jpg" alt="Logica de predicados">
+        </div>
+        </div> 
+        <h2>Inferencia y razonamiento</h2>
+        <br>
+        <p>Inferir es concluir o decidir a partir de algo conocido o asumido, llegar a una conclusión. A su vez, razonar es pensar coherente y lógicamente, establecer inferencias o  conclusiones a partir de hechos conocidos o  asumidos.</p>
+        <br>
+        <p>El proceso de razonamiento, por lo tanto,  involucra la realización de inferencias. Realizar  inferencias significa derivar nuevos hechos a  partir de un conjunto de hechos conocidos como verdaderos. La Lógica de Predicados  proporciona un grupo de reglas sólidas, con las  cuales se pueden realizar inferencias.</p>
+        <br>
+        <p>En Lógica de Predicados, existen tres métodos  básicos de razonamiento: deductivo, abductivo e  inductivo.</p>
+        <br>
+        <h3>Deductivo</h3>
+        <br>
+        <p>es el razonamiento a partir de un principio conocido, hacia uno desconocido; de lo  general a lo específico, o de la premisa a la conclusión lógica. La deducción realiza  inferencias lógicamente correctas. Esto significa  que la deducción a partir de premisas verdaderas, garantiza el resultado de conclusiones también verdaderas.</p>
+        <br>
+        <h3>Abductivo</h3>
+        <br>
+        <p>es un método de razonamiento  comúnmente utilizado para generar  explicaciones. A diferencia de la inducción, la abducción no garantiza que se puedan lograr  conclusiones verdaderas, por lo tanto, no es un  método sólido de inferencia.</p>
+        <br>
+        <h3>Inductivo</h3>
+        <br>
+        <p>e define como el razonamiento a  partir de hechos particulares o casos  individuales, para llegar a una conclusión  general. El método inductivo es la base de la  investigación científica.</p>
+        <br>
+        <h2>Aplicaciones</h2>
+        <br>
+        <p>La lógica de predicados es ampliamente utilizada en áreas como la inteligencia artificial, la matemática y la lingüística. En inteligencia artificial, se utiliza para representar el conocimiento y realizar inferencias en sistemas expertos. En matemática, es una herramienta fundamental para la formalización de teoremas y demostraciones. En lingüística, se emplea para el análisis de estructuras lingüísticas y la representación de significado.</p>
+        <br>
+        <br>
+        <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/763OVDQ0kqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div> 
+        <br>
+</main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Lógica de Sistemas </h2>
+                    <p> Pablo Sebastián Quan Montenegro </p>
+                    <p> Carnet: 5090-23-2625</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+function toggleSubtopics(topic) {
+  var subtemas = document.querySelectorAll('.subtema.' + topic);
+
+  subtemas.forEach(function(subtema) {
+    var display = window.getComputedStyle(subtema).getPropertyValue('display');
+    if (display === 'none') {
+      subtema.style.display = 'block';
+    } else {
+      subtema.style.display = 'none';
+    }
+  });
+}
+    </script>
+</body>
+</html>

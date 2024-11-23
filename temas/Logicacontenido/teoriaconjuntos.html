@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>  Lógica de Sistemas   </title>
+</head>
+<body>
+    <section class="contenedor">
+      <nav class="navbar">
+        <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+        <div class="subtema tema1">Contenido Primer Parcial</div>
+        <div class="subtema tema1"> <a href="intrologica.html" class="subtema tema1">Introducción a la lógica</a></div>
+        <div class="subtema tema1"> <a href="silogismos.html" class="subtema tema1">Silogismos</a></div>
+        <div class="subtema tema1"> <a href="teoriaconjuntos.html" class="subtema tema1">Teoría de conjuntos (Lógica de clases)</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="subtema tema1">Contenido Segundo Parcial</div>
+        <div class="subtema tema2"> <a href="logicaproposicional.html" class="subtema tema1">Lógica proposicional</a></div>
+        <div class="subtema tema2"> <a href="dedunatural.html" class="subtema tema1">Deducción natural</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="subtema tema1">Contenido Examen Final</div>
+        <div class="subtema tema3"> <a href="algboole.html" class="subtema tema1">Álgebra de Boole</a></div>
+        <div class="subtema tema3"> <a href="logipredicados.html" class="subtema tema1">Lógica de predicados</a></div>
+        <div class="subtema tema3"> <a href="uml.html" class="subtema tema1">UML</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="volver"> 
+        <div class="logo"> 
+          <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+        </div>
+        <a href="../../LogicaDeSistemas.html"> Regresar al tablero</a> 
+    </div>
+</nav>
+<main>
+  <div class="contenedor-contenido">
+    <div class="contenedor-info">
+     <h1>Teoría de conjuntos</h1>
+     <br>
+     <p>Rama de la lógica matemática que estudia las propiedades, las operaciones y las relaciones de los conjuntos.</p>
+     <br>
+     <p>El primer estudio formal sobre el tema fue realizado por el matemático alemán Geog Cantor (padre de la teoría de conjuntos) en el siglo XIX y luego fue reformado por Ernest.</p>
+     <br>
+     <h2>Definición</h2>
+     <br>
+     <p>Agrupación bien definida de objetos no repetidos ni ordenados, estos objetos se llaman elementos; un conjunto está bien definido, cuando puede afirmar si un determinado elemento pertenece o no al conjunto. Por ejemplo: el conjunto de los números enteros, el conjunto de los números mayor a 5 y menor a 9, y el conjunto de estudiante de la UMG.</p>
+     <br>
+    <h2>Notación</h2>
+    <br>
+    <p>Se utilizan letras mayúsculas para representar conjuntos; Puede designarse enumerando sus elementos dentro de llaves; Los elementos se separan con comas; El orden no es relevante y los elementos no tienden a repetirse.</p>
+    <br>
+    <div class="contenedor-modelos"> 
+      <div class="modelos">
+        <img src="../../img/ImageLogica/notacionconjun.jpg" alt="Notación de conjuntos">
+    </div>
+    </div>  
+    <br>
+    <h2>Cardinalidad</h2>
+    <br>
+    <p>Para cualquier conjunto finito A, n(A), denota el número de sus elementos y se conoce como cardinal o tamaño de A.</p>
+    <br>
+    <div class="contenedor-modelos"> 
+      <div class="modelos">
+        <img src="../../img/ImageLogica/cardinalidad.jpg" alt="Cardinalidad en conjuntos">
+    </div>
+    </div>  
+     <br>
+      <h2>Tipos de conjuntos</h2>
+      <br>
+      <h3>Conjunto finito</h3>
+      <br>
+      <p>Es el conjunto ilimitado de números de elementos</p>
+      <br>
+      <h3>Conjunto vacio</h3>
+      <br>
+      <p>Es el conjunto que no tiene elementos, también se le llama conjunto nulo. Generalmentem se le representa por símbolos ∅ dentro de {}</p>
+      <br>
+      <h3>Conjunto universo</h3>
+      <br>
+      <p>Aquel que tiene todos los elementos de todo conjunto o a su totalidad, se denota con la letra U.</p>
+      <br>
+      <h2>Relaciones entre conjuntos</h2>
+      <br>
+      <h3>Inclusión</h3>
+      <br>
+      <p>Si C, D son conjuntos del universo U, decimos que C es subconjunto propio de D.</p>
+        <br>
+        <h3>Subconjunto propio</h3>
+        <br>
+      <p>Si además, D contiene un modelo que no está en C, entonces C es un subconjunto propio.</p>
+        <br>
+        <h3>Igualdad de conjuntos</h3>
+        <br>
+      <p>Para un universo dado U, los conjuntos Cy D (tomados de U) son iguales.</p>
+      <br>
+      <p>A partir de esas ideas de igualdad de entre conjuntos, vemos el orden o la repetición de elementos no significativos, para un conjunto general.</p>
+      <br>
+      <h3>Conjuntos equivalentes</h3>
+      <br>
+      <p>Aquellas colecciones que coinciden entre sí en cuanto a sus respectivas cardinalidades, es decir, que cuentan con igual cantidad de elementos.</p>
+      <h3>Conjunto potencia</h3>
+      <br>
+      <p>Si A es un conjunto del universo U, el conjunto potencia, que se denota P(A), es la colección (o conjunto) de todos los subconjuntos de A. Donde el cardinal se encuentra calculando 2 elevado a n, donde n es el número de elementos.</p>
+        <br>
+        <h2>Operaciones de conjuntos</h2>
+        <br>
+        <h3>A U B (la unión de A y B)</h3>
+        <br>
+        <p>Conjunto formado por todos los elementos de dos conjuntos</p>
+        <br>
+        <h3>A ∩ B (la intersección de A y B)</h3>
+        <br>
+        <p>Conjunto formado por todos los elementos en común de dos conjuntos</p>
+        <br>
+        <h3>A Δ B (la diferencia simétrica de A y B)</h3>
+        <br>
+        <p>Conjunto formado por todos los elementos de A y B, menos los que tienen en común.</p>
+        <br>
+        <h3>A - B (la diferencia de A y B)</h3>
+        <br>
+        <p>Conjunto formado por todos los elementos de A que no se encuentran en B.</p>
+        <br>
+        <h3>A' (complemento de A)</h3>
+        <br>
+        <p>Conjunto formado por todos los elementos que le faltan a A para ser igual al universo.</p>
+        <br>
+        <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <img src="../../img/ImageLogica/teoriaconjuntos2.jpg" alt="Teoria de conjuntos">
+        </div>
+        </div>  
+        <br>
+</main>
+            
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Lógica de Sistemas </h2>
+                    <p> Pablo Sebastián Quan Montenegro </p>
+                    <p> Carnet: 5090-23-2625</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+function toggleSubtopics(topic) {
+  var subtemas = document.querySelectorAll('.subtema.' + topic);
+
+  subtemas.forEach(function(subtema) {
+    var display = window.getComputedStyle(subtema).getPropertyValue('display');
+    if (display === 'none') {
+      subtema.style.display = 'block';
+    } else {
+      subtema.style.display = 'none';
+    }
+  });
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./estilos-contenido.css">
+    <title> Sistemas Operativos </title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../Introduccion/historia.html" class="subtema tema1"> Historia de la Computadora </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/conceptos.html" class="subtema tema1"> Conceptos Básicos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/arquitectura.html" class="subtema tema1">Arquitectura de una Computadora</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/sistemas.html" class="subtema tema1">Sistemas Operativos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/recursos.html" class="subtema tema1">Recursos Administrados por el Sistema Operativo</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/linux.html" class="subtema tema1">Linux</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/virtualizacion.html" class="subtema tema1">Virtualización y Linux</a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../Introduccion/bases.html" class="subtema tema1"> Bases de Datos </a></div>
+          <div class="subtema tema2"> <a href="../Introduccion/redes.html" class="subtema tema1"> Redes </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../Introduccion/desarrollo.html" class="subtema tema1"> Desarrollo WEB </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/html.html" class="subtema tema1"> HTML </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/css.html" class="subtema tema1"> CSS </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../intro.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1> Sistemas Operativos </h1>
+                    <h2> ¿Qué es un Sistema Operativo?</h2>
+                    <p>
+                      Sistema tipo software que conirola la computadora y adminisira los servicios y sus funciones como asi también la ejecucién de otros programas
+                      compatibles con este
+                    </p>
+                    <h3> Ejemplos de familias de sistemas operativos: </h3>
+                   <p> 
+                    <ul> 
+                      <li> Windows </li>
+                      <li> Unix </li>
+                      <li> Linux </li>
+                      <li> Mac Os</li>
+                      <li> etc.</li>
+                    </ul>
+                  </p>
+                  <p> Un Sistema Operativo permite interactuar con el hardware de computadoras, teléfonos celulares, PDAS, etc. y eiecutar programas compatibles en estos.
+                      Permite controlar las asignaciones de memoria , ordenar las solicitudes al sistema, controlar los dispositivos de entrada y salida, facilitar la conexion
+                      a redes y el manejo de archivos 
+                    </p>
+                    <h3> Servicios del Sistema Operativo</h3>
+                   <p><strong> Ejecución de programas: </strong> capacidad del sistema de cargar un programa en memoria y ejecutarlo. <br>
+
+                    <strong> Operaciones de E/S: </strong> dado que los programas no pueden ejecutar operaciones de E/S directamente, el sistema operativo debe proveer medios para
+                      realizarlas.
+                    <br>
+                      <strong> Manipulaciones del sistema de archivos: </strong> capacidad de los programas de leer, escribir, crear y borrar archivos.
+                    <br>
+                      <strong> Comunicaciones: </strong> intercambio de informacion entre procesos ejecutando en la misma computadora o en otra conectada a travez de una red. Implementada
+                        mediante memoria compratida o por paso de mensajes.
+                    <br>
+                        <strong> Deteccion de errores: </strong> asegurar un computo correcto mediante la deteccién de errore en el CPU, memoria, dispositivos de E/S o 
+                        en los programas de usuario 
+                  </p>
+
+                  <h2>
+                    Evolución de los Sistemas Operativos
+                  </h2>
+                  <h3> Monitor simple Residente </h3>
+                  <p>
+                    Un solo fragmento de cdédigo que se enlazaba con los programas, cargandose todo en memoria y ejecutandose junto con el programa (“biblioteca en tiempo 
+                    de ejecución")
+                  </p>
+                  <h3> Sistema por Lotes </h3>
+                  <p>
+                    Se pueden considerar como los primeros SSOOs reales, este estaba almacenado en la memoria, cargaba un unico trabajo en memoria (desde el lector de tarjetas)
+                    , Ejercutaba el trabajo y cargaba el siguiente. Las tarjetas de control indicaban que hacer al SSOO, este contaba con muchos problemos como lo son:
+                    <ul>
+                      <li> Largas esperas entre lotes de trabajo </li>
+                      <li> La dificultad de manejar la concurrencia entre E/S y ejecucién en CPU ayudé a estimular el desarrollo de los SSOO multiprogramados </li>
+                      <li> Carecen de interactividad entre el usuario y los trabajos que se ejecutan</li>
+                    </ul>
+                  </p>
+                  <h2> multiprogramación </h2>
+                    <p>
+                      Tiene como objetivo aprovechar los tiempos de espera de un trabajo en la CPU para ejecutar instrucciones  de otro trabajo, manteniendo los trabajos 
+                      simultaneamente en memoria, eligiendo el trabajo a conmutar y el uso de interrupciones o DMA, optimizando la productividad del sistema.
+                    </p>
+                  <h3> Elementos necesarios </h3>
+                    <ul>
+                      <li>  Las rutinas de E/S deben estar suministradas por el SSOO</li>
+                      <li>  Debe de existir una gestión de memoria para poder asignar y controlar la memoria </li>
+                      <li>  Debe existir una planificacién de la CPU. El SSOO debe elegir uno de entre los diferentes trabajos listos para ejecutarse que hay en memoria </li>
+                      <li>  La asignación de los dispositivos es realizada por el SSOO</li>
+                    </ul>
+                    <h2> Tiempo compartido </h2>
+                    <p>
+                     <strong>Objetivo:</strong> Permitir la interaccién entre el usuario y el trabajo que se esta ejecutando. <br>
+                     <strong>Metodo:</strong> Cada usuario tiene la impresión de disponer planificacién de la CPU para proporcionar a cada usuario una pequeña proporción del
+                     tiempo de CPU
+                    </p>
+                    <h2> Sistemas de Tiempo Real </h2>
+                    <p>
+                     El factor tiempo se vuelve una variante fundamental <br>
+                     Muy utilizados en sistemas empotrados <br>
+                     El sistema operativo debe respondersiempre dentro de los márgenes requeridos por el sistema controlado, si nossalimos de esos márgenes, tendremos que buscar otras soluciones.
+                      <h2> Estructuración de los Sistemas Operativos </h2>
+                        <table>
+                          <tr>
+                            <th> Estructura Monolítica </th>
+                            <th> Estructura en Capas </th>
+                          </tr>
+                          <tr>
+                            <td>
+                              Es la estructura de los primeros sistemas operativos constituidos fundamentalmente por un solo programa compuesto de un conjunto de 
+                              procedimientos entrelazados de tal forma que cada uno puede llamar a cualquier otro. <br>
+                              Generalmente están hechos a medida, por lo que son eficientes y rápidos en su ejecución y gestión, pero por lo mismo carecen de flexibilidad 
+                              para soportar diferentes ambientes de trabajo o tipos de aplicaciones.
+                            </td>
+                            <td>
+                              A medida que fueron creciendo las necesidades de los usuarios y se perfeccionaron los sistemas, se hizo necesaria una mayor organización del
+                              software, del sistema operativo, donde una parte del sistema contenía subpartes y esto organizado en forma de niveles. <br>
+                              Se dividió el sistema operativo en pequeñas partes, de tal forma que cada una de ellas estuviera perfectamente definida y con un claro interface con
+                              el resto de elementos. <br>
+                              Se constituyó una estructura jerárquica o de niveles en los sistemas operativos, el primero de los cuales fue denominado THE 
+                              (Technische Hogeschool, Eindhoven), de Dijkstra, que se utilizó con fines didácticos. Se puede pensar también en estos sistemas como si fueran 
+                              `multicapa'. Multics y Unix caen en esa categoría.
+                            </td>
+                          </tr> 
+                          <tr>
+                            <td>
+                              <img src="../../img/introduccion/imagenes-contenido/monolitica.JPG" alt="">
+                            </td>
+                            <td>
+                              <img src="../../img/introduccion/imagenes-contenido/capas.JPG" alt="">
+                            </td>
+                          </tr> 
+                        </table>
+
+                        <h2> Máquina Virtual </h2>
+                        <p> Se trata de un tipo de sistemas operativos que presentan una interface a
+                          cada proceso, mostrando una máquina que parece idéntica a la máquina
+                          real subyacente. Estos sistemas operativos separan dos conceptos que suelen
+                          estar unidos en el resto de sistemas: la multiprogramación y la máquina
+                          extendida. El objetivo de los sistemas operativos de máquina virtual es el de
+                          integrar distintos sistemas operativos dando la sensación de ser varias
+                          máquinas diferentes. </p>
+                          <p>
+                            El núcleo de estos sistemas operativos se denomina monitor virtual y tiene
+                            como misión llevar a cabo la multiprogramación, presentando a los niveles
+                            superiores tantas máquinas virtuales como se soliciten. Estas máquinas virtuales
+                            no son máquinas extendidas, sino una réplica de la máquina real, de manera
+                            que en cada una de ellas se pueda ejecutar un sistema operativo diferente,
+                            que será el que ofrezca la máquina extendida al usuario.
+                          </p>
+                          <h2> Cliente-servidor(Microkernel) </h2>
+                          <p> El tipo más reciente de sistemas operativos es el denominado
+                            cliente-servidor, que puede ser ejecutado en la mayoría de las
+                            computadoras, ya sean grandes o pequeñas. <br>
+                            Este sistema sirve para toda clase de aplicaciones por tanto, es de propósito general y cumple con las mismas actividades que los sistemas
+                            operativos convencionales.
+                            <br>
+                            El núcleo tiene como misión establecer la comunicación y los servidores. Los procesos pueden ser tanto servidores como clientes. Por ejemplo, 
+                            un programa de aplicación normal es un cliente que llama al servidor correspondiente para acceder a un archivo o realizar una operación de 
+                            entrada/salida sobre un dispositivo concreto. A su vez, un proceso cliente puede actuar como servidor para otro".
+                          </p> 
+                            
+                            <h2>CMD y su Importancia</h2>    
+                            <p>
+                              MS-DOS también conocido como el sistema operativo desarrollado por la compañía de Microsoft, el cual controla una gran cantidad de situaciones 
+                              como lo son las asignaciones de los recursos a los ordenadores, como lo es el disco duro, la memoria hasta la administración de todos los 
+                              dispositivos de entrada y salida como el monitor, cornetas, impresoras, entre muchos otros elementos.
+                            </p>    
+                            <h3> Comandos importantes del CMD</h3>
+                            <p> 
+                              <ul>
+                              <li><strong>CD..:</strong> Cambia al directorio superior.</li>
+                              <li><strong>CD:</strong> Cambia al directorio inferior.</li>
+                              <li><strong>CD/:</strong> Cambia directamente al directorio raíz.</li>
+                              <li><strong>COPY:</strong> Copiar los archivos.</li>
+                              <li><strong>COPY CON:</strong> Copia a un archivo el texto tecleado hasta pulsar “Ctrl-Z”.</li>
+                              <li><strong>DATE:</strong> Cambia la fecha del sistema o permite solo visualizarla.</li>
+                              <li><strong>DEL:</strong> Sirve para borrar algún archivo, siempre y cuando este no este oculto en el fichero.</li>
+                              <li><strong>ECHO:</strong> Muestra un texto especificado en la pantalla.</li>
+                              <li><strong>RD o RMDIR:</strong> Borra un directorio que esté completamente vacío.</li>
+                              <li><strong>DIR:</strong> Enseña una lista con todos los archivos y directorios que se encuentren en el directorio del disco.</li>
+                              <li><strong>EXIT:</strong> Permite salir de una de las sesiones.</li>
+                              <li><strong>TIME:</strong> Permite visualizar o modificar la hora del reloj.</li>
+                              <li><strong>VER:</strong> Enseña la versión del sistema operativo.</li>
+                              <li><strong>TYPE:</strong> Muestra el contenido del fichero.</li>
+                              <li><strong>VOL:</strong> Sirve para ver la etiqueta del disco duro y su volumen si posee.</li>
+                              </ul>
+                            </p>
+            
+        </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Introducción a los Sistemas de Computo </h2>
+                    <p> Jorge Mario Folgar Martínez </p>
+                    <p> Carnet: 5090-23-5008</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

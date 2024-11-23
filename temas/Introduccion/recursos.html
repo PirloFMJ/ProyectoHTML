@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./estilos-contenido.css">
+    <title> Recursos Administrados por el Sistema Operativo </title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../Introduccion/historia.html" class="subtema tema1"> Historia de la Computadora </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/conceptos.html" class="subtema tema1"> Conceptos Básicos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/arquitectura.html" class="subtema tema1">Arquitectura de una Computadora</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/sistemas.html" class="subtema tema1">Sistemas Operativos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/recursos.html" class="subtema tema1">Recursos Administrados por el Sistema Operativo</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/linux.html" class="subtema tema1">Linux</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/virtualizacion.html" class="subtema tema1">Virtualización y Linux</a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../Introduccion/bases.html" class="subtema tema1"> Bases de Datos </a></div>
+          <div class="subtema tema2"> <a href="../Introduccion/redes.html" class="subtema tema1"> Redes </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../Introduccion/desarrollo.html" class="subtema tema1"> Desarrollo WEB </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/html.html" class="subtema tema1"> HTML </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/css.html" class="subtema tema1"> CSS </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../intro.html"> Regresar al tablero</a>  
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Recursos Administrados por el Sistema Operativo</h1>
+                <h2> CONTROL DE PROCESOS</h2>
+                <p>
+                  Un proceso puede informalmente entenderse como un programa en ejecución. Formalmente un proceso es "Una unidad de actividad que se caracteriza por 
+                  la ejecución de una secuencia de instrucciones, un estado actual, y un conjunto de recursos del sistema asociados.
+                </p>
+                <h3> Modelo de Procesos</h3>
+                <p>
+                  Un solo procesador puede ser compartido entre varios procesos con cierto “algoritmo de planificación”, el cual determina cuándo detener el trabajo en un proceso y 
+                  dar servicio a otro distinto.
+                </p>
+                <h3>Modelo de 2 procesos </h3>
+                <p>
+                  En este modelo, un proceso puede estar ejecutándose o no. Cuando se crea un nuevo proceso, se pone en estado de No ejecución. En algún momento el proceso que se está ejecutando pasará al
+                  estado No ejecución y otro proceso se elegirá de la lista
+                  de procesos listos para ejecutar para ponerlo en estado Ejecución.
+                </p>
+                <div class="contenedor-modelos">
+                  <div class="modelos">
+                    <img src="../../img/introduccion/imagenes-contenido/2procesos.jpg" alt="">
+                  </div>
+                </div>
+              <h3>Modelo de 5 procesos </h3>
+              <p>
+                El modelo anterior de dos estados funcionaría bien con una cola FIFO y planificación por turno rotatorio para los procesos que no están en ejecución, si 
+                los procesos estuvieran siempre listos para ejecutar. En la realidad, los procesos utilizan datos para operar con ellos, y puede
+                suceder que no se encuentren listos, o que se deba esperar algún suceso antes de continuar, como una operación de Entrada/Salida.
+                <p>
+                  Se divide entonces al estado No ejecución en dos estados: Listo y Bloqueado. Se agregan además un estado Nuevo y otro Terminado.
+                </p>
+              </p>
+              <div class="contenedor-modelos">
+                <div class="modelos">
+                  <img src="../../img/introduccion/imagenes-contenido/5procesos.jpg" alt="">
+                </div>    
+              </div>   
+              <h2> Sistema Operativo Multihilo</h2>
+              <p>
+                Es aquel Sistema Operativo que posee varios hilos de ejecución. <br>
+                Un hilo de Ejecución o subproceso es una característica que permite a una aplicación realizar varias tareas a la vez (concurrentemente). <br>
+                Los distintos hilos de ejecución comparten una serie de recursos tales como el espacio de memoria, los archivos abiertos, situación de autenticación, etc. <br>
+                Los procesos son creados y destruidos por el sistema operativo, así como también este se debe hacer cargo de la comunicación entre procesos, pero lo hace a petición 
+                de otros procesos. <br>
+                El mecanismo por el cual un proceso crea otro proceso se denomina bifurcación (fork). Los nuevos procesos son independientes y no comparten memoria (es decir, 
+                información) con el proceso que los ha creado. <br>
+                En los sistemas operativos multihilo es posible crear tanto hilos como procesos. La diferencia es en que un proceso solamente puede crear hilos para sí mismo.
+              </p>
+              <h2> Estados de un Proceso </h2>
+              <p>
+                <ul>
+                  <li> En ejecución </li>
+                  <li> Listo </li>
+                  <li> Bloqueado</li>
+                </ul>
+              </p>
+              <h2> Estados de un Proceso (segun el modelo de 5 estados) </h2>
+              <p>
+                <ul>
+                  <li> Ejecución </li>
+                  <li> Listo </li>
+                  <li> Bloqueado </li>
+                  <li> Nuevo </li>
+                  <li> Terminado </li>
+                </ul>
+              </p>
+              <h2>
+                Lista de Listos
+              </h2>
+              <p>
+                La “Lista de Listos” se mantiene en orden prioritario y la “Lista de Bloqueados” está desordenada, ya que los procesos se desbloquean en el orden en que 
+                tienen lugar los eventos que están esperando. Al admitirse un trabajo en el sistema se crea un proceso equivalente y es insertado en la última parte de la
+                 “Lista de Listos”. <br>
+                 La asignación de la CPU al primer proceso de la “Lista de Listos” se denomina “Despacho”, que es ejecutado por una entidad del Sistema Operativo llamada 
+                 “Despachador”.
+              </p>
+                <h2> Programa vs Proceso </h2>
+                  <h3> Programa </h3>
+                  <p> Conjunto de instrucciones, código. Elemento pasivo. </p>
+                  <h3>Proceso</h3>
+                  <p>
+                    Programa en ejecución. (Ente dinámico) Un programa puede levantar varios procesos. Tiene asociado un espacio de direcciones.
+                  </p>
+                  <h2>
+                    Espacio de Direcciones
+                  </h2>
+                  <p>
+                    El espacio de direcciones es el espacio en memoria asignado al proceso. Aquí se encuentra el código del proceso y los datos que este utiliza. 
+                    Desde el punto de vista del proceso, el Address Space es la única memoria existente en el sistema, no pudiendo acceder a direcciones foráneas. 
+                    En el caso de sistemas sin paginación, el espacio de direcciones no puede ser particionado en páginas, y ser cargado por partes o llevado parcialmente a 
+                    swap; resultando en que el bloque de memoria esta realmente presente ya sea en RAM o disco.
+                  </p>
+                  <div class="contenedor-modelos">
+                    <div class="modelos">
+                      <img src="../../img/introduccion/imagenes-contenido/Espacio.JPG" alt="Espacio de Direcciones">
+                    </div>
+                  </div>
+                  <h2> PCB (Process Control Block)</h2>
+                  <p>
+                    El Process Control Block, (Bloque del control del Proceso) es una ficha que lleva el sistema operativo con toda la información administrativa de un proceso.
+                  <br>
+                  El sistema operativo, para correr un proceso, necesita saber cierta información importante de él, y esta, se encuentra almacenada en un registro, que es el 
+                  "Bloque de control de proceso BCP".
+                  <br>
+                  Cuando un proceso termina, su información que estaba almacenada en el Bloque se elimina, y este puede ser utilizado por otros procesos.
+                  </p>
+                  <div class="contenedor-modelos">
+                    <div class="modelos">
+                      <img src="../../img/introduccion/imagenes-contenido/PCB.JPG" alt="Espacio de Direcciones">
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Introducción a los Sistemas de Computo </h2>
+                    <p> Jorge Mario Folgar Martínez </p>
+                    <p> Carnet: 5090-23-5008</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

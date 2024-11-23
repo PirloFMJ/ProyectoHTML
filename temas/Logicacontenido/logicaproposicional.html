@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>  Lógica de Sistemas   </title>
+</head>
+<body>
+    <section class="contenedor">
+      <nav class="navbar">
+        <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+        <div class="subtema tema1">Contenido Primer Parcial</div>
+        <div class="subtema tema1"> <a href="intrologica.html" class="subtema tema1">Introducción a la lógica</a></div>
+        <div class="subtema tema1"> <a href="silogismos.html" class="subtema tema1">Silogismos</a></div>
+        <div class="subtema tema1"> <a href="teoriaconjuntos.html" class="subtema tema1">Teoría de conjuntos (Lógica de clases)</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="subtema tema1">Contenido Segundo Parcial</div>
+        <div class="subtema tema2"> <a href="logicaproposicional.html" class="subtema tema1">Lógica proposicional</a></div>
+        <div class="subtema tema2"> <a href="dedunatural.html" class="subtema tema1">Deducción natural</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="subtema tema1">Contenido Examen Final</div>
+        <div class="subtema tema3"> <a href="algboole.html" class="subtema tema1">Álgebra de Boole</a></div>
+        <div class="subtema tema3"> <a href="logipredicados.html" class="subtema tema1">Lógica de predicados</a></div>
+        <div class="subtema tema3"> <a href="uml.html" class="subtema tema1">UML</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="volver"> 
+        <div class="logo"> 
+          <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+        </div>
+        <a href="../../LogicaDeSistemas.html"> Regresar al tablero</a> 
+    </div>
+</nav>
+<main>
+  <div class="contenedor-contenido">
+    <div class="contenedor-info"> 
+      <h1>Lógica proposicional</h1>
+      <br>
+      <p>También llamado lógica de orden cero es la rama de la lógica matemática que estudia proposiciones, afirmaciones u oraciones, los métodos de vincularlas mediante conectores lógicos y las relaciones y propiedades que se derivan de esos procedimientos. Fue desarrollado por primera vez por Leibniz, entre el Siglo XVII y XVIII.</p>
+      <br>
+      <h2>Proposición</h2>
+      <br>
+      <p>Una proposición es toda oración o enunciado al cual se le asigna cierto valor de verdad (V o F), si no se puede concluir que es verdadera o falsa la proposición, entonces no es una proposición.</p>
+        <br>
+        <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <img src="../../img/ImageLogica/logicapropo.jpg" alt="Logica proposicional">
+        </div>
+        </div>  
+        <br>
+      <h2>Tipos de proposiciones</h2>
+      <br>
+      <h3>Proposiciones simples (proposición atómica)</h3>
+        <br>
+        <p>Son aquellas que no son afectadas por negaciones "no" o términos de enlace como conjuciones "y", y disyunciones "o" y no se pueden descomponer.</p>
+        <br>
+        <h3>Proposiciones compuestas (proposición molecular)</h3>
+        <br>
+      <p>Una proposición compuesta es una declaración lógica que se construye a partir de proposiciones más simples utilizando conectores lógicos, como "y", "o" y "no". Estos conectores permiten combinar proposiciones simples para formar proposiciones más complejas.</p>
+        <br>
+        <h2>Variables</h2>
+        <br>
+        <p>El lenguaje simbólico de la lógica de proposiciones, a los enunciaods simples, atómicos o elementales, se les llama variables y se representa con las letras minúsculas del final de abecedario: p, q, r, s.</p>
+        <br>
+        <h2>Operadores lógicos</h2>
+        <br>
+        <p>El primer paso para simbolizar un argumento es definir los símbolos básicos o conectivos lógicos.</p>
+        <br>
+        <h3>Negación (¬)</h3>
+        <br>
+        <p>Permite negar una proposición atómica o una proposición compuesta</p>
+        <br>
+        <h3>Conjunción (∧)</h3>
+        <br>
+        <p>Enlaza proposiciones por el conectivo "y", o sus expresiones equivalentes como "e", "pero", "aunque", etc.</p>
+        <br>
+        <h3>Disyunción inclusiva (v)</h3>
+        <br>
+        <p>La conjunción "o" y sus expresiones equivalente como "u", "ya... ya", "bien... bien", "sea... sea", etc. Admite que dos alternativas se den a la vez</p>
+        <br>
+        <h3>Disyunción exclusiva (⊕)</h3>
+        <br>
+        <p>No admite que las dos alternativas se den a la vez.</p>
+        <br>
+        <h3>Condicional (->)</h3>
+        <br>
+        <p>Es la forma enunciativa que simboliza enunciados enlazados por expresiones equivalente como "si... entonces", "debido que...", "si", "ya que", etc.</p>
+        <br>
+        <h3>Bicondicional (<->)</h3>
+        <br>
+        <p>Establece dos condiciones, pero en sentido inverso, se simboliza de forma "si y solo si" o sus expresiones equivalente "cuando y solo cuando", "si... entonces y solo entonces", etc.</p>
+        <br>
+        <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <img src="../../img/ImageLogica/logicapropo2.jpg" alt="Logica proposicional">
+        </div>
+        </div>  
+        <br>
+        <h2>Formalización de argumentos</h2>
+        <br>
+        <p>Se dice forma argumentativa o forma condicional a la sucesión finita de cada premisa y la conclusión, una forma argumentativa es válida si la conclusión se deriva de sus premisas.</p>
+        <h3>Forma argumentativa</h3>
+        <br>
+        <p>(P1∧P2∧P3∧Pn) -> C donde las premisas son unidas por conjunciones y conforman el antecedente, mientras la C es la conclusión siendo el consecuente.</p>
+        <br>
+        <h2>Validez con tablas de verdad</h2>
+        <br>
+        <p>Es una tabla que muestra el valor de verdad de una proposición compuesta, para cada combinacíon de verdad se puede asignar un valor.</p>
+        <br>
+        <p>Se puede clasificar las proposiciones en tres categorías diferentes usando las características de sus tablas de verdad.</p>
+        <br>
+        <h3>Tautología</h3>
+        <br>
+        <p>Cuando el análisis de la proposición es verdadero (V) en su totalidad, se le considera un argumento válido.</p>
+        <br>
+        <h3>Contradicción</h3>
+        <br>
+        <p>Si el análisis de la proposición es (F) en su totalidad.</p>
+        <br>
+        <h3>Contingencia</h3>
+        <br>
+        <p>Si no es verdadero (V) ni falso (F).</p>
+        <br>
+        <h2>Construcción de la tabla de verdad</h2>
+        <br>
+        <h3>Conjunción (y)</h3>
+        <br>
+        <p>La sentencia será verdadera solo cuando ambas variables proposiciones sean verdaderas.</p>
+        <br>
+        <h3>Disyunción inclusiva (o)</h3>
+        <br>
+        <p>La sentencia será verdadera cuando una o amabs proposiciones son verdaderas.</p>
+        <br>
+        <h3>Negación (no)</h3>
+        <br>
+        <p>Consiste en cambiar el valor de verdad de una variable proposicional.</p>
+        <br>
+        <h3>Disyunción exclusiva (o... o)</h3>
+        <br>
+        <p>La sentencia será verdadera solo cuando una de las dos variables proposicionales sea verdadera.</p>
+        <br>
+        <h3>Condicional (Si... entonces)</h3>
+        <br>
+        <p>Una premisa (V) y una conclusión (F) siempre será falsa, lo demás verdadero.</p>
+        <br>
+        <h3>Bicondicional (<->)</h3>
+        <br>
+        <p>La sentencia será verdadera cuando ambas variables proposicionales sean iguales, o ambas verdaderas o ambas falsas.</p>
+        <br>
+        <h3>Representación en las tablas de verdad sobre los conectores lógicos</h3>
+        <br>
+        <table>
+          <tr>
+            <th>p</th>
+            <th>q</th>
+            <th>p ∧ q</th>
+            <th>p V q</th>
+          </tr>
+            <tr>
+              <td>V</td>
+              <td>V</td>
+              <td>V</td>
+              <td>V</td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+                <td>V</td>
+              </tr>
+              <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+                </tr>
+                <tr>
+                  <td>F</td>
+                  <td>F</td>
+                  <td>F</td>
+                  <td>F</td>
+                </tr>
+          </table>
+          <table>
+            <tr>
+            <th>¬p</th>
+    <th>p ⊕ q</th>
+    <th>p -> q</th>
+    <th>p <-> q</th>
+  </tr>
+  <tr>
+  <td>F</td>
+    <td>F</td>
+    <td>V</td>
+    <td>V</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>V</td>
+    <td>F</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>V</td>
+    <td>V</td>
+    <td>V</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>V</td>
+    <td>F</td>
+    <td>V</td>
+    <td>V</td>
+  </tr>
+          </table>
+            <br>
+            <div class="contenedor-modelos"> 
+              <div class="modelos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vKe0UKSpNQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            </div> 
+        <br>
+</main>
+            
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Lógica de Sistemas </h2>
+                    <p> Pablo Sebastián Quan Montenegro </p>
+                    <p> Carnet: 5090-23-2625</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+function toggleSubtopics(topic) {
+  var subtemas = document.querySelectorAll('.subtema.' + topic);
+
+  subtemas.forEach(function(subtema) {
+    var display = window.getComputedStyle(subtema).getPropertyValue('display');
+    if (display === 'none') {
+      subtema.style.display = 'block';
+    } else {
+      subtema.style.display = 'none';
+    }
+  });
+}
+    </script>
+</body>
+</html>

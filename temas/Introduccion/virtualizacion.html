@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="./estilos-contenido.css">
+    <title>Virtualización y Linux</title>
+</head>
+<body>
+      <section class="contenedor">
+        <nav class="navbar">
+          <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+          <div class="subtema tema1">Contenido Primer Parcial</div>
+          <div class="subtema tema1"> <a href="../Introduccion/historia.html" class="subtema tema1"> Historia de la Computadora </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/conceptos.html" class="subtema tema1"> Conceptos Básicos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/arquitectura.html" class="subtema tema1">Arquitectura de una Computadora</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/sistemas.html" class="subtema tema1">Sistemas Operativos </a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/recursos.html" class="subtema tema1">Recursos Administrados por el Sistema Operativo</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/linux.html" class="subtema tema1">Linux</a></div>
+          <div class="subtema tema1"> <a href="../Introduccion/virtualizacion.html" class="subtema tema1">Virtualización y Linux</a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Segundo Parcial</div>
+          <div class="subtema tema2"> <a href="../Introduccion/bases.html" class="subtema tema1"> Bases de Datos </a></div>
+          <div class="subtema tema2"> <a href="../Introduccion/redes.html" class="subtema tema1"> Redes </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="subtema tema1">Contenido Examen Final</div>
+          <div class="subtema tema3"> <a href="../Introduccion/desarrollo.html" class="subtema tema1"> Desarrollo WEB </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/html.html" class="subtema tema1"> HTML </a></div>
+          <div class="subtema tema3"> <a href="../Introduccion/css.html" class="subtema tema1"> CSS </a></div>
+          <div class="subtema tema1"><hr></div>
+          <div class="volver"> 
+          <div class="logo"> 
+            <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+          </div>
+          <a href="../../intro.html"> Regresar al tablero</a> 
+      </div>
+  </nav>
+    <main>
+        <div class="contenedor-contenido">
+            <div class="contenedor-info">
+             <h1>Virtualización y Linux</h1>
+                <h2> Virtualización </h2>
+                    <p>
+                      Virtualización, usado en informática, es el concepto que describe la capacidad de algunas computadoras de utilizar un programa o un conjunto de programas (software) para 
+                      imitar las características físicas (hardware) de otra computadora o de un conjunto de computadoras, lo que da lugar a un sistema informático virtual. Esto permite 
+                      ejecutar más de un sistema virtual, cada uno con sistemas operativos y aplicaciones distintas, en un solo servidor. Por tanto, la función del software de virtualización
+                       consiste en simular la existencia del recurso tecnológico que se quiere virtualizar. En los ámbitos de habla inglesa, este término se suele conocer por el numerónimo 
+                       v12n.
+                    </p>
+                <h2>
+                  Tipos de virtualización
+                </h2> 
+                <h3>
+                  Virtualización de plataforma
+                </h3>
+                <p>
+                 También llamado virtualización de servidor o de hardware, en la que se emplean máquinas virtuales, programas huésped ejecutados sobre software especial, 
+                 llamado hipervisor o VMM (Virtual Machine Monitor). Este último crea una capa de abstracción sobre el hardware de la máquina física (host) y se la ofrece 
+                 al sistema operativo de la máquina virtual.
+                </p>
+                <h3>
+                  Virtualización de recursos de hardware
+                </h3>
+                <p>
+                  Que, según el tipo de recurso, se distinguen entre
+                </p>
+                <p>
+                  <ul>
+                    <li>Virtualización de almacenamiento</li>
+                    <li>Virtualización de memoria</li>
+                    <li>Virtualización de recursos de computación</li>
+                    <li>Virtualización de interfaces de red</li>
+                  </ul>
+                </p>
+                <h3>Virtualización de red</h3>
+                <p>
+                  ejecutada por servicios de VPN, VLAN, Virtual IP y SDN.
+                </p>
+                <h3>
+                  Virtualización de entornos software de ejecución
+                </h3>
+                <p>
+                  Dependiendo del entorno de ejecución
+                </p>
+                <p>
+                  <ul>
+                    <li> Virtualización con respecto al sistema operativo</li>
+                    <li>Virtualización de escritorio</li>
+                  </ul>
+                </p>
+                <h3>
+                  Virtualización de aplicaciones
+                </h3>
+                <p>
+                  Consiste en usar aplicaciones que aparentemente se ejecutan en local.
+                </p>
+
+                <h2>
+                  Virtual Box
+                </h2>
+                <p>
+                  VirtualBox fue inicialmente creado por la empresa Innotek bajo licencia propietaria. También hicieron una versión gratuita para uso personal o de
+                   evaluación con menos funcionalidades, la cual se encontraba regida por la licencia PUEL. En enero de 2007, la versión gratuita fue promocionada a libre, 
+                   se la denominó VirtualBox OSE asignándosele la licencia libre GPLv2 y la versión completa de VirtualBox se ofreció gratuitamente bajo licencia PUEL. 
+                   En febrero de 2008 la empresa Innotek fue comprada por Sun Microsystems y esta, a su vez, en enero de 2010 fue adquirida por Oracle, que cambió el 
+                   nombre de VirtualBox a Oracle VM VirtualBox y también modificó la forma de distribuirlo, pues crearon una versión de VirtualBox bajo licencia libre 
+                   GPLv2 a la que le faltaban algunos componentes propietarios (USB 2.0, VRDP, PXE y PCI passthrough) que se podían añadir mediante la instalación del 
+                   paquete denominado Oracle VM VirtualBox Extension Pack bajo licencia PUEL. Este formato es el actual hoy en día, por lo que si queremos instalar un 
+                   VirtualBox completo hay que instalar el paquete principal y a continuación el Extension Pack.
+                  <br>
+                  VirtualBox (VB) es un software de virtualización de tipo 2 donde los usuarios pueden cargar múltiples SSOO invitados en un solo SO anfitrión. 
+                  Cada invitado se puede configurar, iniciar, pausar o parar de forma independiente. El SO anfitrión y los SSOO invitados pueden comunicarse entre sí a 
+                  través de una serie de mecanismos, entre ellos un portapapeles común, carpetas compartidas, arrastrando y soltando ficheros, etc.
+                </p>
+                <h2>Ubuntu</h2>
+                <h3>características</h3>
+                <p>
+                  Ubuntu está basado en la distribución Debian GNU/Linux y soporta oficialmente dos arquitecturas de hardware: Intel x86, AMD64. Sin embargo ha sido portada
+                   extraoficialmente a cinco arquitecturas más: PowerPC, SPARC (versión "alternate"),IA-64, PlayStation y HP PA-RISC. Al igual que casi cualquier 
+                   distribución basada en Linux, Ubuntu es capaz de actualizar a la vez todas las aplicaciones instaladas en la máquina a través de repositorios, a 
+                   diferencia de otros sistemas operativos comerciales, donde esto no es posible. Esta distribución ha sido y está siendo traducida a numerosos idiomas, y 
+                   cada usuario es capaz de colaborar voluntariamente a esta causa, a través de Internet. Los desarrolladores de Ubuntu se basan en gran medida en el trabajo
+                    de las comunidades de Debian, GNOME y KDE (como es el caso de las traducciones).
+                </p>
+                <h2>Instalar Ubuntu en Virtual Box</h2>
+            <div class="contenedor-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hLfVO0GwheU" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+           </div>     
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Introducción a los Sistemas de Computo </h2>
+                    <p> Jorge Mario Folgar Martínez </p>
+                    <p> Carnet: 5090-23-5008</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+           <script>
+            // Función para mostrar u ocultar los subtemas al hacer clic en los temas principales
+            function toggleSubtopics(topic) {
+      var subtemas = document.querySelectorAll('.subtema.' + topic);
+    
+      subtemas.forEach(function(subtema) {
+        var display = window.getComputedStyle(subtema).getPropertyValue('display');
+        if (display === 'none') {
+          subtema.style.display = 'block';
+        } else {
+          subtema.style.display = 'none';
+        }
+      });
+    }
+          </script>
+        </body>
+</html>

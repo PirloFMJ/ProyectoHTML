@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../estilos-contenido.css">
+    <title>  Lógica de Sistemas   </title>
+</head>
+<body>
+    <section class="contenedor">
+      <nav class="navbar">
+        <div class="titulo-contenido" onclick="toggleSubtopics('tema1')"> ☰ </div>
+        <div class="subtema tema1">Contenido Primer Parcial</div>
+        <div class="subtema tema1"> <a href="intrologica.html" class="subtema tema1">Introducción a la lógica</a></div>
+        <div class="subtema tema1"> <a href="silogismos.html" class="subtema tema1">Silogismos</a></div>
+        <div class="subtema tema1"> <a href="teoriaconjuntos.html" class="subtema tema1">Teoría de conjuntos (Lógica de clases)</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="subtema tema1">Contenido Segundo Parcial</div>
+        <div class="subtema tema2"> <a href="logicaproposicional.html" class="subtema tema1">Lógica proposicional</a></div>
+        <div class="subtema tema2"> <a href="dedunatural.html" class="subtema tema1">Deducción natural</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="subtema tema1">Contenido Examen Final</div>
+        <div class="subtema tema3"> <a href="algboole.html" class="subtema tema1">Álgebra de Boole</a></div>
+        <div class="subtema tema3"> <a href="logipredicados.html" class="subtema tema1">Lógica de predicados</a></div>
+        <div class="subtema tema3"> <a href="uml.html" class="subtema tema1">UML</a></div>
+        <div class="subtema tema1"><hr></div>
+        <div class="volver"> 
+        <div class="logo"> 
+          <a href="https://umg.edu.gt" target="_blank"> <img src="../../img/logoumg.png" alt="Logo UMG"> </a> 
+        </div>
+        <a href="../../LogicaDeSistemas.html"> Regresar al tablero</a> 
+    </div>
+</nav>
+<main>
+  <div class="contenedor-contenido">
+    <div class="contenedor-info">
+     <h1>Silogismos</h1>
+     <h2>Definición</h2>
+     <br>
+     <p>Razonamiento deductivo que consta de premisas (mayor y menor), a partir de las cuales se llega a una conclusión</p>
+     <br>
+     <h3>Estrunctura</h3>
+     <br>
+     <p>Cuantificador+Sujeto+Cópula+Predicado</p>
+     <br>
+     <h2>Modelo de las proposiciones categóricas</h2>
+     <br>
+     <ul>
+      <li><p>Universal afirmativa (proposiciones - A): Todo S es P</p></li>
+      <li><p>Universal negativa: (proposiciones - E): Ningún S es P</p></li>
+      <li><p>Particular afirmativo (proposiciones - I): Algún S es P</p></li>       
+      <li><p>Particula negativa (proposiciones - O): Algún S no es P</p></li>
+    </ul>
+    <br>
+    <h2>Elementos de un silogismo</h2>
+  </p>
+     <br>
+     <p>
+     <ul>
+      <li><p>PM (premisa mayor)</p></li>
+      <li><p>pm (premisa menor)</p></li>
+      <li><p>P (término mayor)</p></li>
+      <li><p>S (término menor)</p></li>
+      <li><p>M (término menor)</p></li>
+      <li><p>C (conclusión)</p></li>
+    </ul>
+  </p>
+    <br>
+    <h2>Figuras del silogismo</h2>
+    <br>
+    <p>Para comprobar si un silogismo es válido (es decir, analizar si realmente es un silogismo) lo primero es reconocer la figura, no todos los argumentos son silogismos. La clave es apilar y reconocer cada silogismo por su figura silogística y luego por el modo.</p>
+    <br>
+    <div class="contenedor-modelos"> 
+      <div class="modelos">
+        <img src="../../img/ImageLogica/figusilo.jpg" alt="Figuras del silogismo">
+    </div>
+    </div>  
+     <br>
+    <h2>Reglas tradicionales</h2>
+    <br>
+    <p>
+      <ul>
+        <p><li>Los silogismos están compuestos por 3 proposiciones, 1 conclusión y 3 términos.</li></p>
+        <p><li>El término medio no debe entrar en la conclusión.</li></p>
+        <p><li>El término medio debe de destar distribuido al menos una vez en las premisas.</li></p>
+        <p><li>Ningún término puede estar distribuido en la conclusión, si no lo está también en la premisa respectiva.</li></p>
+        <p><li>Dos premisas negativas no puede generar una conclusión.</li></p>
+        <p><li>Una premisa negativa, conclusión negativa.</li></p>
+        <p><li>De dos premisas particuales no se obtiene una conclusión.</li></p>
+        <p><li>Cualquier premisa que sea particular, conclusión particular.</li></p>
+        <p><li>En una premisa mayor particular y opremisa menor negativa, no hay conclusión.</li></p>
+      </ul>
+    </p>
+     <br>
+      <h2>Oposición de las proposiciones</h2>
+      <br>
+      <p>Esquema en el que se estudian las relaciones formales entre los diferentes juicios aristotélicos, cuando tienen el mismo sujeto y predicado, permitiendo una inferencia inmediata.</p>
+      <br>
+      <p>
+        <ul>
+          <li><p>Contrarias (A - E): difieren de cualidad, no cantidad.</p></li>
+          <li><p>Sub-Contrarias (I - O): difieren de cualidad, no de cantidad</p></li>
+          <li><p>Contradictorias (A - O, E - I): difieren la calidad y cantidad.</p></li>
+          <li><p>Subalternas (A - I, E - O): difieren de cantidad pero no de cualidad.</p></li>
+        </ul>
+         <br>
+         <div class="contenedor-modelos"> 
+          <div class="modelos">
+            <img src="../../img/ImageLogica/silogismosv2.jpg" alt="Figuras del silogismo">
+        </div>
+        </div>  
+        <br>
+</main>
+            
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenido-footer">
+                    <h2> Lógica de Sistemas </h2>
+                    <p> Pablo Sebastián Quan Montenegro </p>
+                    <p> Carnet: 5090-23-2625</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+function toggleSubtopics(topic) {
+  var subtemas = document.querySelectorAll('.subtema.' + topic);
+
+  subtemas.forEach(function(subtema) {
+    var display = window.getComputedStyle(subtema).getPropertyValue('display');
+    if (display === 'none') {
+      subtema.style.display = 'block';
+    } else {
+      subtema.style.display = 'none';
+    }
+  });
+}
+    </script>
+</body>
+</html>
